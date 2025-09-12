@@ -5,26 +5,27 @@ import { FaChevronUp } from "react-icons/fa6";
 export default function BackToTop() {
   useEffect(() => {
     const handleScroll = () => {
+      const btn = document.getElementById("back-top");
+      if (!btn) return;
       if (window.scrollY > 20) {
-        document.getElementById("back-top")?.classList.add("show");
+        btn.classList.add("show");
       } else {
-        document.getElementById("back-top")?.classList.remove("show");
+        btn.classList.remove("show");
       }
     };
 
-    const handleClick = (event: MouseEvent) => {
+    const handleClick = (event) => {
       event.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    // ✅ add passive scroll listener
     document.addEventListener("scroll", handleScroll, { passive: true });
-    document.getElementById("back-top")?.addEventListener("click", handleClick);
+    const btn = document.getElementById("back-top");
+    btn?.addEventListener("click", handleClick);
 
-    // ✅ cleanup on unmount
     return () => {
       document.removeEventListener("scroll", handleScroll);
-      document.getElementById("back-top")?.removeEventListener("click", handleClick);
+      btn?.removeEventListener("click", handleClick);
     };
   }, []);
 
