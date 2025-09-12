@@ -1,0 +1,71 @@
+/*-------------------------------home module header css start-------------------------------*/
+.header .contact-btn .arrow .MdArrowOutward{
+    transition: all 0.5s;
+    display: block;
+}
+
+.header .contact-btn:hover .arrow .MdArrowOutward{
+    transform: translateY(-90%);
+}
+/*-------------------------------home module header css end-------------------------------*/
+/*-------------------------------work section  css start-------------------------------*/
+.work-card-button .arrow .FaArrowRight{
+    transition: all 0.5s;
+    display: block;
+    /* font-size: 30px !important; */
+}
+
+.work-card-button:hover .arrow .FaArrowRight{
+    transform: translateX(95%);
+}
+/*-------------------------------work section  css end-------------------------------*/
+
+
+/*---------home hero section css start---------*/
+.banner-four__image{
+    position: relative;
+}
+.banner-four__image .text-btn .btn-circle{
+    position: absolute;
+    z-index: 10;
+    top: -6%;
+    left: 65%;
+    animation: rotate 20s linear infinite;
+}
+.banner-four__image .text-btn .btn-arry{
+    position: absolute;
+    z-index: 11;
+    top: 4%;
+    left: 69%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}   
+.banner-four__image img{
+    position: relative;
+}
+@media (max-width:1125px){
+        .banner-four__image .text-btn .btn-arry{
+        top: 8%;
+        left: 71%;
+        }
+}
+@media (max-width:768px){
+    .banner-four__image .text-btn .btn-circle{
+        top: -10%;
+        left: 65%;
+        width: 80px;
+    }
+    .banner-four__image .text-btn .btn-arry{
+        top: 0%;
+        left: 71%;
+        width: 30px;
+    }
+}
+/*---------home hero section css end---------*/

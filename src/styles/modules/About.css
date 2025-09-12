@@ -1,0 +1,23 @@
+/* about team css start */
+.swiper-about-team-main .team-social-links{
+    bottom:-40px;
+    transition: ease all 0.5s;
+}
+
+.swiper-about-team-main:hover .team-social-links{
+    bottom: 20px;
+}
+.about-button{
+    width:fit-content !important;
+}
+.about-button .arrow{
+    overflow: hidden;
+}
+.about-button .arrow .faArrow{
+    transition: ease all 0.5s;
+}
+
+.about-button:hover .arrow .faArrow{
+    transform: translateX(-20px);
+}
+/* about team css end */
