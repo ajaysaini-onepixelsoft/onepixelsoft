@@ -74,7 +74,8 @@ const [whatsAppLink, setWhatsAppLink] = useState("");
       href={whatsAppLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 w-fit relative z-1"
+      className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3
+       rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 w-fit relative z-1"
     >
       <FaWhatsapp size={30} />
       Chat on WhatsApp
