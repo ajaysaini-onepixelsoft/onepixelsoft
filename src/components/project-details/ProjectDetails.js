@@ -3,26 +3,6 @@ import Image from 'next/image';
 import React from 'react'
 
 export default function ProjectDetails({ data }) {
-<<<<<<< HEAD
-  console.log(data)
-
-  return (
-    <div className='xl:px-40 lg:px-10 px-5 pt-10'>
-      {/* Project Banner Image */}
-      <div className='main-image wow animate__animated animate__fadeInUp'>
-        <Image
-          src={
-            data.project_banner_img
-              ? `/assets/images/project/${data.project_banner_img}`
-              : `/assets/images/project/default-image.png`
-          }
-          alt={data.project_name} fill loading="lazy"
-          className='w-full lg:h-[50vh] h-full object-cover rounded-lg shadow-lg'
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = '/assets/images/project/default-image.png';
-          }}
-=======
 
   return (
     <section className='xl:px-40 lg:px-10 px-5 pt-10'>
@@ -32,7 +12,6 @@ export default function ProjectDetails({ data }) {
           src='/assets/images/project/default-image.png'
           alt={data.project_name} fill loading="lazy" sizes='100%'
           className=' object-cover rounded-lg shadow-lg'
->>>>>>> 6347013 (update)
         />
       </div>
 
@@ -88,59 +67,6 @@ export default function ProjectDetails({ data }) {
         </ol>
 
         {/* Images Section */}
-<<<<<<< HEAD
-        <div className="case-details__image-sm mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  ">
-          
-          {/* Image 1 */}
-            <Image
-              src={
-                data.project_banner_img
-                  ? `/assets/images/project/${data.project_banner_img}`
-                  : `/assets/images/project/default-image.png`
-              }
-              alt={data.project_name} fill
-              className='w-full lg:h-[40vh] md:h-[30vh] h-full object-cover rounded-lg shadow-lg'
-              onError={(e) => {
-                e.target.onerror = null; loading="lazy"
-                e.target.src = '/assets/images/project/default-image.png';
-              }}
-            />
-          {/* Image 2 */}
-          <div className="image">
-            <Image
-              src={
-                data.project_img
-                  ? `/assets/images/project/${data.project_img}`
-                  : `/assets/images/project/default-image.png`
-              }
-              alt={data.project_name} fill loading="lazy"
-              className='w-full h-[40vh] object-cover rounded-lg shadow-lg'
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src = '/assets/images/project/default-image.png';
-              }}
-            />
-          </div>
-          {/* Image 3 */}
-          <div className="image">
-            <Image
-            loading="lazy"
-              src={
-                data.project_banner_img 
-                  ? `/assets/images/project/${data.project_banner_img}`
-                  : `/assets/images/project/default-image.png`
-              }
-              alt={data.project_name}
-              fill
-              className='w-full h-[40vh] object-cover rounded-lg shadow-lg'
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src = '/assets/images/project/default-image.png';
-              }}
-            />
-          </div>
-        </div>
-=======
 <div className="case-details__image-sm mt-10 grid grid-cols-2  lg:grid-cols-3 gap-5">
   {/* Image 1 */}
   <div className="relative w-full h-30 md:h-[30vh] ">
@@ -175,7 +101,6 @@ export default function ProjectDetails({ data }) {
   </div>
 </div>
 
->>>>>>> 6347013 (update)
 
         {/* Results Section */}
         <h3 className="mt-10 text-2xl font-semibold">Results</h3>
@@ -189,16 +114,11 @@ export default function ProjectDetails({ data }) {
         <div className=" rounded-lg bg-cover bg-center mb-10 p-10 text-white" style={{ backgroundImage: "url('/assets/images/case/bg-image.png')" }}>
           <p>{`"Onepixel Soft's innovative design transformed our art gallery's online presence. We're thrilled with the results."`}</p>
           <div className="flex justify-between mt-5">
-<<<<<<< HEAD
-            <div className="flex gap-2 items-center">
-              <Image loading="lazy" src="/assets/images/case/user.png" alt="User" fill sizes='100%' className="w-10 h-10 rounded-full" />
-=======
             <div className="flex gap-2 items-center ">
               <div className='relative w-10 h-10'>
 
                 <Image loading="lazy" src="/assets/images/case/user.png" alt="User" fill sizes='100%' className=" rounded-full object-contain" />
               </div>
->>>>>>> 6347013 (update)
               <h5 className="font-bold">
                 <a href={data.project_url} className="text-white">
                   Edward Rafael
@@ -229,10 +149,6 @@ export default function ProjectDetails({ data }) {
       </div>
 
       </div>
-<<<<<<< HEAD
-    </div>
-=======
     </section>
->>>>>>> 6347013 (update)
   );
 }

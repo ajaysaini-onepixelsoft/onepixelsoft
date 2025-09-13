@@ -20,11 +20,7 @@ export default function BrandsSection() {
   ];
 
   return (
-<<<<<<< HEAD
-    <div className="brands-section py-10 xl:px-40 px-5 wow animate__animated animate__fadeIn">
-=======
     <section className="brands-section py-10 xl:px-40 px-5 wow animate__animated animate__fadeIn">
->>>>>>> 6347013 (update)
       {/* LTR Row */}
       <Marquee speed={50}  gradient={false} pauseOnHover={true}>
         {brandLogos.map((logo, index) => (
@@ -66,10 +62,6 @@ export default function BrandsSection() {
           </div>
         ))}
       </Marquee>
-<<<<<<< HEAD
-    </div>
-=======
     </section>
->>>>>>> 6347013 (update)
   );
 }

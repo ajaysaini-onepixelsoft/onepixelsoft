@@ -10,11 +10,7 @@ import Image from "next/image";
 
 export default function OurTestimonial() {
   return (
-<<<<<<< HEAD
-    <div className="relative xl:px-40 lg:px-10 px-5 xl:py-20 py-10 bg-gray-50 wow animate__animated animate__fadeInUp">
-=======
     <section className="relative xl:px-40 lg:px-10 px-5 xl:py-20 py-10 bg-gray-50 wow animate__animated animate__fadeInUp">
->>>>>>> 6347013 (update)
       <div className="flex flex-col xl:flex-row gap-12 xl:gap-20">
         <div className="flex-1">
           <h1 className="text-2xl md:text-3xl font-bold  text-gray-900 mb-2">
@@ -150,10 +146,6 @@ export default function OurTestimonial() {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-    </div>
-=======
     </section>
->>>>>>> 6347013 (update)
   );
 }

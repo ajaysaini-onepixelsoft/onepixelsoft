@@ -3,11 +3,7 @@ import RedArrowButton from './RedArrowButton'
 
 export default function OurLocation() {
     return (
-<<<<<<< HEAD
-        <div className=" bg-white xl:px-40 px-5 py-15 lg:rounded-lg rounded-md overflow-hidden wow  animate__animated  animate__fadeInUp">
-=======
         <section className=" bg-white xl:px-40 px-5 py-15 lg:rounded-lg rounded-md overflow-hidden wow  animate__animated  animate__fadeInUp">
->>>>>>> 6347013 (update)
             {/* inset-0 bg-gradient-to-tr from-red-500 via-white/80 to-transparent */}
             <div className='relative lg:rounded-lg rounded-md'>
 
@@ -32,10 +28,6 @@ export default function OurLocation() {
                     ></iframe>
                 </div>
             </div>
-<<<<<<< HEAD
-        </div>
-=======
         </section>
->>>>>>> 6347013 (update)
     )
 }

@@ -128,11 +128,7 @@ export default function MobileHeader({ isMenuOpen, setIsMenuOpen }) {
           {/* Contact Button */}
           <div className='contact-btn bg-[url("/assets/images/shape/btn.png")] bg-no-repeat px-3 py-3  
               transition-all duration-500 flex items-center gap-2 cursor-pointer text-white mt-5'>
-<<<<<<< HEAD
-            <button>Contact Us</button>
-=======
             <Link href="/contact">Contact Us</Link>
->>>>>>> 6347013 (update)
             <div className='arrow h-6 w-6 overflow-hidden'>
               <MdArrowOutward size={20} />
               <MdArrowOutward size={20} />

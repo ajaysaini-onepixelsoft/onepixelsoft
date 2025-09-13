@@ -15,11 +15,7 @@ export default function BlogDetails({ Slugdata }) {
         }}
       />
 
-<<<<<<< HEAD
-      <div className="px-5 lg:px-10 xl:px-40  py-12">
-=======
       <section className="px-5 lg:px-10 xl:px-40  py-12">
->>>>>>> 6347013 (update)
         {/* Main grid: article + sidebar */}
         <main className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Article */}
@@ -96,11 +92,7 @@ export default function BlogDetails({ Slugdata }) {
             </ul>
           </aside>
         </main>
-<<<<<<< HEAD
-      </div>
-=======
       </section>
->>>>>>> 6347013 (update)
     </>
   );
 }

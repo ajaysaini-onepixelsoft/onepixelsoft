@@ -3,20 +3,12 @@ import React from 'react'
 
 export default function OurFeatured({FeaturedData}) {
     return (
-<<<<<<< HEAD
-        <div className='xl:px-40 px-5 pt-10'>
-=======
         <section className='xl:px-40 px-5 pt-10'>
->>>>>>> 6347013 (update)
             <div className='heading wow  animate__animated  animate__fadeInUp'>
                 <h1 className='text-[2.2rem] mb-3'>{FeaturedData.heading}</h1>
                 <p className='text-[1.1rem]'>{FeaturedData.desc}</p>
             </div>
-<<<<<<< HEAD
-            <section className="py-10 bg-white">
-=======
             <div className="py-10 bg-white">
->>>>>>> 6347013 (update)
                 <div className=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 ">
                     {
                         FeaturedData.cards.map((item,index)=>{
@@ -34,16 +26,9 @@ export default function OurFeatured({FeaturedData}) {
 
 
                 </div>
-<<<<<<< HEAD
-            </section>
-
-
-        </div>
-=======
             </div>
 
 
         </section>
->>>>>>> 6347013 (update)
     )
 }

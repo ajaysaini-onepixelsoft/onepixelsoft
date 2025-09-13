@@ -4,11 +4,7 @@ import Image from 'next/image'
 
 export default function  CommenHero({data}) {
   return (
-<<<<<<< HEAD
-      <div className='  leading-[3rem] flex gap-3 items-center justify-between xl:px-40 lg:px-10 px-5 py-15  bg-cover wow animate__animated animate__fadeInDown relative lg:h-[40vh] ' 
-=======
       <section className='  leading-[3rem] flex gap-3 items-center justify-between xl:px-40 lg:px-10 px-5 py-15  bg-cover wow animate__animated animate__fadeInDown relative lg:h-[40vh] ' 
->>>>>>> 6347013 (update)
       style={{
           background:"url('/assets/images/bg/banner-fout-bg.png')",
           backgroundPosition:' center',
@@ -22,10 +18,6 @@ export default function  CommenHero({data}) {
           <h2 className='font-bold text-[1.8rem] mb-3 text-[#eee]'>{data.heading}</h2>
           <p className='text-[1.2rem] leading-[2rem] text-[#ccc] w-[80%]'>{data.des}</p>
         </div>
-<<<<<<< HEAD
-        </div>
-=======
         </section>
->>>>>>> 6347013 (update)
   )
 }

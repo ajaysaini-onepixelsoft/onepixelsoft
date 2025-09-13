@@ -4,11 +4,7 @@ import React from 'react'
 
 export default function WorkProcess() {
     return (
-<<<<<<< HEAD
-        <div className="relative xl:px-40 px-5 py-20 bg-white">
-=======
         <section className="relative xl:px-40 px-5 py-20 bg-white">
->>>>>>> 6347013 (update)
             <div className="flex flex-col xl:flex-row justify-between items-start mb-12 wow  animate__animated  animate__fadeInUp">
                 <SmallTitle smText="Our Work Process" exClass="text-[#751212] text-[20px]" />
                 <h4 className="font-dark lg:text-[28px] md:text-[1.5rem] font-medium xl:w-[70%] mt-4 xl:mt-0">
@@ -16,11 +12,7 @@ export default function WorkProcess() {
                 </h4>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-4 wow  animate__animated  animate__fadeInUp">
-<<<<<<< HEAD
-                <div className="flex flex-col lg:gap-20 gap-4 text-black">
-=======
                 <div className="flex lg:flex-col md:flex-row flex-col lg:gap-20 gap-4 text-black">
->>>>>>> 6347013 (update)
                     <div className="bg-white rounded-lg shadow p-6">
                         <h3 className="text-xl font-bold lg:mb-2"><span className="text-[#751212] mr-2">01.</span> Consultation</h3>
                         <p className="font-dark">We delve deep into understanding our client&apos;s aspirations, challenges, and unique requirements.</p>
@@ -31,20 +23,12 @@ export default function WorkProcess() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-<<<<<<< HEAD
-                    <div className="relative w-full flex flex-col items-center  md:h-[20rem] ">
-=======
                     <div className="relative w-full flex flex-col items-center  h-[20rem]  ">
->>>>>>> 6347013 (update)
                         <Image className="object-contain rounded-lg shadow z-10" loading="lazy" src="/assets/images/process/OurWorkProcess-01.png" alt="Our Work Process" fill sizes='100%'/>
                         <Image className="absolute top-[30%]  lg:scale-[1.3] scale-1 object-contain" loading="lazy" src="/assets/images/process/process-image12.png" alt="Process Point" fill sizes='100%'/>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div className="flex flex-col lg:gap-20 gap-4 text-black">
-=======
                 <div className="flex lg:flex-col md:flex-row flex-col lg:gap-20 gap-4 text-black">
->>>>>>> 6347013 (update)
                     <div className="bg-white rounded-lg shadow p-6">
                         <h3 className="text-xl font-bold lg:mb-2"><span className="text-[#751212] mr-2">02.</span> Concept Generate</h3>
                         <p className="font-dark">With a thorough understanding of our client&apos;s needs, our next step involves the exciting process of concept generation.</p>
@@ -55,10 +39,6 @@ export default function WorkProcess() {
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
-        </div>
-=======
         </section>
->>>>>>> 6347013 (update)
     )
 }

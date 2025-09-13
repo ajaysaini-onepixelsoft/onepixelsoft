@@ -1,14 +1,11 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-<<<<<<< HEAD
-=======
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
->>>>>>> 6347013 (update)
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -44,14 +41,11 @@ body {
   color: #000;
 }
 
-<<<<<<< HEAD
-=======
 /*======= commen css starts ===========*/
 .w-fit{
   width: fit-content !important;
 }
 /*======= commen css end ===========*/
->>>>>>> 6347013 (update)
 
 /*======= Font Family css starts ===========*/
 .font-space-grotesk{

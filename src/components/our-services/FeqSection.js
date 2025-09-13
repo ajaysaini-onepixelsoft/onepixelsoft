@@ -12,11 +12,7 @@ export default function FeqSection() {
   };
 
   return (
-<<<<<<< HEAD
-    <div className="xl:px-40 px-5 lg:px-10 py-10 bg-white wow  animate__animated  animate__fadeInUp">
-=======
     <section className="xl:px-40 px-5 lg:px-10 py-10 bg-white wow  animate__animated  animate__fadeInUp">
->>>>>>> 6347013 (update)
       <div className="flex flex-wrap gap-10  justify-between">
         <div className="left basis-full md:basis-[45%] space-y-4 wow  animate__animated  animate__fadeInLeft" data-wow-delay="0.3s">
           <h1 className="text-[2.2rem] text-gray-800 mb-2">Frequently Asked Questions Answered</h1>
@@ -55,10 +51,6 @@ export default function FeqSection() {
           ))}
         </div>
       </div>
-<<<<<<< HEAD
-    </div>
-=======
     </section>
->>>>>>> 6347013 (update)
   );
 }

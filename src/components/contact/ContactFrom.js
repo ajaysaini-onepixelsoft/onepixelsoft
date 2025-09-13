@@ -1,39 +1,18 @@
 import Image from "next/image";
 import React from "react";
 
-<<<<<<< HEAD
-export default function ContactFrom({ exClass = "", rotate = 0 }) {
-  return (
-    <div
-      className={`xl:px-40 px-5 py-20 ${
-        exClass ? exClass : "bg-gradient-to-br from-blue-50 to-indigo-100"
-=======
 export default function ContactFrom({ exClass, rotate = 0 }) {
   return (
     <section
       className={`xl:px-40 px-5 py-20 ${
         exClass ? exClass : "bg-gradient-to-br from-violet-100 to-[#eee]"
->>>>>>> 6347013 (update)
       } relative wow animate__animated animate__fadeInUp overflow-hidden`}
       data-wow-delay="0.5s"
     >
       {/* Background shapes */}
-<<<<<<< HEAD
-      <div className="absolute bg-[#6366F1] opacity-[0.7] rounded-full animated-random-shape"></div>
-      <div className="absolute bg-indigo-200/40 h-[200px] w-[200px] rounded-full bottom-10 right-10 blur-2xl"></div>
-
-      <Image
-        src="/assets/images/shape/image.png"
-        className="absolute top-10 md:left-0 right-3 scale-x-[-1] opacity-80"
-        alt="shape"
-        width={300} loading="lazy"
-        height={300}
-      />
-=======
       <div className="absolute bg-yellow-100 opacity-[0.7] rounded-full animated-random-shape"></div>
       <div className="absolute bg-fuchsia-100 h-[200px] w-[200px] rounded-full bottom-10 right-10 blur-2xl animated-random-shape"></div>
 
->>>>>>> 6347013 (update)
 
       <div
         className={`flex gap-10 md:flex-row flex-col justify-between relative z-10 rotate-${rotate}`}
@@ -131,10 +110,6 @@ export default function ContactFrom({ exClass, rotate = 0 }) {
           </form>
         </div>
       </div>
-<<<<<<< HEAD
-    </div>
-=======
     </section>
->>>>>>> 6347013 (update)
   );
 }

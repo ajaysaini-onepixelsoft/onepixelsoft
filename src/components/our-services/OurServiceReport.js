@@ -3,44 +3,6 @@ import Image from 'next/image'
 import React from 'react'
 export default function OurServiceReport({ data }) {
     return (
-<<<<<<< HEAD
-        <div className="bg-[#ffe6e6] py-15 px-6 px-5 xl:px-40 flex flex-col md:flex-row items-center justify-between gap-10 wow  animate__animated  animate__fadeInUp">
-            {/* Left side images */}
-            <div className=" bg-[#F7D4D4] p-10 rounded-xl basis-[40%] wow  animate__animated  animate__fadeInLeft" data-wow-delay="0.3s">
-                {data.img1 || data.img2 || data.img3 ? (
-                    <div className="grid grid-cols-2 gap-4 relative">
-                        {data.img1 && (
-                            <div className='h-[250px] lg:w-[500px] w-[250px]'>
-                                <Image fill
-                                    src={data.img1}
-                                    alt="Image 1" sizes='100%'
-                                    className="rounded-xl h-full w-full object-contain" loading="lazy"
-                                />
-                            </div>
-                        )}
-                        {data.img2 && (
-                          <div className='h-[250px] lg:w-[500px] w-[250px]'>
-                            <Image fill
-                                src={data.img2}
-                                alt="Image 2" sizes='100%'
-                                className="rounded-xl h-full w-full object-contain" loading="lazy"
-                            />
-                          </div>
-                        )}
-                        {data.img3 && (
-                            <div className='h-[250px] lg:w-[500px] w-[250px]'>
-                            <Image fill
-                                src={data.img3}
-                                alt="Image 3" loading="lazy" sizes='100%'
-                                className={`rounded-xl h-full w-full object-contain ${data.img1 && data.img2 ? "col-span-2" : "col-span-1"
-                                    }`}
-                            />
-                        </div>
-                        )}
-                    </div>):null
-                }
-            </div>
-=======
         <section className="bg-[#ffe6e6] py-15 px-6 px-5 xl:px-40 flex flex-col md:flex-row items-center justify-between gap-10 wow  animate__animated  animate__fadeInUp">
             {/* Left side images */}
 <div className="bg-[#F7D4D4] p-6 md:p-10 rounded-xl basis-full lg:basis-[40%] wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
@@ -93,7 +55,6 @@ export default function OurServiceReport({ data }) {
   ) : null}
 </div>
 
->>>>>>> 6347013 (update)
 
             {/* Right side content */}
                 <div className="basis-[55%] flex gap-5 flex-col wow  animate__animated  animate__fadeInRight" data-wow-delay="0.3s">
@@ -119,10 +80,6 @@ export default function OurServiceReport({ data }) {
                         <RedArrowButton data={data.btu} />
                     </div>
                 </div>
-<<<<<<< HEAD
-            </div>
-=======
             </section>
->>>>>>> 6347013 (update)
             )
 }

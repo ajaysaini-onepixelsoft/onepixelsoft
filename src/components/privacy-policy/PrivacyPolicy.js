@@ -2,11 +2,7 @@ import React from 'react'
 
 export default function privacyPolicy() {
     return (
-<<<<<<< HEAD
-        <div className="min-h-screen bg-white">
-=======
         <section className="min-h-screen bg-white">
->>>>>>> 6347013 (update)
             <div className="flex flex-col-reverse xl:flex-row xl:px-40 px-5 mt-10 reletive gap-10 wow  animate__animated  animate__fadeInUp">
                 {/* Left: Terms Content */}
                 <div className="terms-Content-left flex-1 h-screen overflow-scroll basis-[70%] wow  animate__animated  animate__fadeInLeft" data-wow-delay="0.3s">
@@ -130,10 +126,6 @@ export default function privacyPolicy() {
                          </div>
                 </div>
             </div>
-<<<<<<< HEAD
-        </div>
-=======
         </section>
->>>>>>> 6347013 (update)
         )
 }

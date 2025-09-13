@@ -9,9 +9,6 @@
 }
 .about-button{
     width:fit-content !important;
-<<<<<<< HEAD
-}
-=======
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -38,7 +35,6 @@
     color: white !important;
 }
 
->>>>>>> 6347013 (update)
 .about-button .arrow{
     overflow: hidden;
 }

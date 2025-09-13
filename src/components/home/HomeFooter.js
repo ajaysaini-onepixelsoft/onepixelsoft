@@ -11,15 +11,6 @@ export default function HomeFooter() {
     return (
         <footer className="bg-[#000] text-gray-200 py-8 relative wow  animate__animated  animate__fadeInUp overflow-hidden">
             <MarqueeSection exClass={'top-0'} />
-<<<<<<< HEAD
-            
-            <div className="px-5 lg:px-10 xl:px-40 pt-30 relative">
-                <div className='absolute bottom-30 h-[500px] w-[500px] bg-gradient-to-r from-[#731212] to-orange-500  left-0 animated-random-shape'></div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-20 md:gap-10 gap-5 relative ">
-                    <div>
-                        <div className='mb-3'>
-                            <Image src="/assets/images/logo/onepixel-logo.png" alt="OnePixelSoft Logo" className=" bg-white px-5 py-3 rounded-md" width={150} height={100} loading="lazy"/>
-=======
 
             <div className='absolute bottom-0 left-0 h-[40vh]  w-full footer-moving-animation'>
                 <div></div>
@@ -36,7 +27,6 @@ export default function HomeFooter() {
                             <Link href="/">
                                 <Image src="/assets/images/logo/onepixel-logo.png" alt="OnePixelSoft Logo" className=" bg-white px-5 py-3 rounded-md" width={150} height={100} loading="lazy" />
                             </Link>
->>>>>>> 6347013 (update)
                         </div>
 
                         <div className='flex gap-4 items-center my-3 text-gray-300 hover:text-white'>

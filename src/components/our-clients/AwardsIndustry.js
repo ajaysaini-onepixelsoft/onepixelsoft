@@ -5,11 +5,7 @@ import React from 'react'
 
 export default function AwardsIndustry() {
   return (
-<<<<<<< HEAD
-    <div className='xl:px-40 px-5 pt-5 mb-15 text-black'>
-=======
     <section className='xl:px-40 px-5 pt-5 mb-15 text-black'>
->>>>>>> 6347013 (update)
         <div className='growth-client-heading wow  animate__animated  animate__fadeInUp'>
             <h1 className='text-[2.4rem] mb-2'>Awards & Industry Recognition</h1>
             <p className='text-[1.09rem] xl:w-[75%] w-full'>Our commitment to excellence has earned us recognition from top industry platforms like Clutch, TopDevelopers, UpCity, DesignRush and Google for showcasing our ability to deliver exceptional results and build meaningful partnerships with our clients.</p>
@@ -26,10 +22,6 @@ export default function AwardsIndustry() {
             }
         </div>
         <HrRow/>
-<<<<<<< HEAD
-    </div>
-=======
     </section>
->>>>>>> 6347013 (update)
   )
 }
