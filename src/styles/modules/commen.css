@@ -51,3 +51,43 @@
   scroll-behavior: smooth;
 }
 /* --------------------term and contion page css end------------*/
+<<<<<<< HEAD
+=======
+
+
+.footer-moving-animation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30vh;
+  filter: blur(25px);
+  padding: 1rem;
+}
+
+@media (max-width:768px){
+ .footer-moving-animation {
+    height: 20vh;
+ }
+}
+.footer-moving-animation div {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background: #731212; /* change your color */
+  animation: bounceHeight 10s infinite linear alternate;
+}
+
+/* Random delay for each bar */
+.footer-moving-animation div:nth-child(1) { animation-delay: 0s; }
+.footer-moving-animation div:nth-child(2) { animation-delay: 0.3s; }
+.footer-moving-animation div:nth-child(3) { animation-delay: 0.6s; }
+.footer-moving-animation div:nth-child(4) { animation-delay: 0.9s; }
+.footer-moving-animation div:nth-child(5) { animation-delay: 1.2s; }
+.footer-moving-animation div:nth-child(6) { animation-delay: 1.5s; }
+
+@keyframes bounceHeight {
+  0%   { height: 10%; }
+  50%  { height: 90%; }
+  100% { height: 10%; }
+}
+>>>>>>> 6347013 (update)

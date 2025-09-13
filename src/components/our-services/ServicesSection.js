@@ -2,7 +2,11 @@ import { servicesData } from '@/data/OurServicesData'
 import React from 'react'
 export default function ServicesSection({heading}) {
   return (
+<<<<<<< HEAD
           <div className='section-1'>
+=======
+          <section className='section-1'>
+>>>>>>> 6347013 (update)
             <h1 className='lg:text-[3rem] text-[2rem] text-center mb-10 wow  animate__animated  animate__fadeInUp'>{heading}</h1>
             <div className='grid xl:grid-cols-3 grid-cols-2 gap-5'>
               {
@@ -25,6 +29,10 @@ export default function ServicesSection({heading}) {
                 })
               }
             </div>
+<<<<<<< HEAD
           </div>
+=======
+          </section>
+>>>>>>> 6347013 (update)
   )
 }

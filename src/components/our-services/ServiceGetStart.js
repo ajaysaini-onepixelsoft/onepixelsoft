@@ -5,8 +5,13 @@ import RedArrowButton from '@/Commen-components/RedArrowButton';
 
 export default function ServiceGetStart({ singleData }) {
   return (
+<<<<<<< HEAD
     <section className="relative xl:px-40 lg:px-20 px-5 py-16 bg-gradient-to-br from-[#E7EFFF] via-white to-[#F9FAFB]">
       <div className="flex flex-col lg:flex-row gap-10 items-start wow animate__animated animate__fadeInDown">
+=======
+    <section className="relative xl:px-40 lg:px-20 px-5 py-16 bg-gradient-to-br from-violet-100 via-white to-[#F9FAFB]">
+      <div className="flex flex-col md:flex-row lg:gap-10 gap-5 items-start wow animate__animated animate__fadeInDown">
+>>>>>>> 6347013 (update)
         
         {/* Left Content */}
         <div className="flex flex-col gap-6 basis-full lg:basis-1/2 bg-white rounded-2xl shadow-lg p-6 lg:p-10 hover:shadow-xl transition duration-300">
@@ -28,14 +33,23 @@ export default function ServiceGetStart({ singleData }) {
 
           {/* Buttons */}
           <div className="flex gap-4 flex-wrap pt-4">
+<<<<<<< HEAD
             <RedArrowButton data="Get Started" />
             <RedArrowButton data="Request a Quote" />
+=======
+            <RedArrowButton pathName={"/contact"} data="Get Started" />
+            <RedArrowButton pathName={"/contact"} data="Request a Quote" />
+>>>>>>> 6347013 (update)
           </div>
         </div>
 
         {/* Right Form */}
         <div className="basis-full lg:basis-2/5 w-full wow animate__animated animate__fadeInRight">
+<<<<<<< HEAD
           <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition duration-300">
+=======
+          <div className="bg-white rounded-2xl shadow-lg lg:p-8 hover:shadow-xl transition duration-300">
+>>>>>>> 6347013 (update)
             <OurServiceFrom />
           </div>
         </div>

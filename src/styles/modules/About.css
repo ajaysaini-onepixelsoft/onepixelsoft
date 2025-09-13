@@ -9,7 +9,36 @@
 }
 .about-button{
     width:fit-content !important;
+<<<<<<< HEAD
 }
+=======
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s ease all;
+}
+.about-button::after{
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    border-radius: 100%;
+    left: 0;
+    transition: 0.3s ease all;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(90deg, #000,#731212 );
+}
+.about-button:hover::after{
+    border-radius: 0%;
+    bottom: 0%;
+}
+.about-button:hover{
+    border: 0px solid #000 !important;
+    color: white !important;
+}
+
+>>>>>>> 6347013 (update)
 .about-button .arrow{
     overflow: hidden;
 }

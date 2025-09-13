@@ -12,7 +12,11 @@ export default function page() {
             des:"We will help a client's problems to develop the products they have with high quality Change the appearance",
         }}/>
         <OurLocation/>
+<<<<<<< HEAD
         <ContactFrom exClass={"bg-[#F9FAFB]"} rotate={0}/>
+=======
+        <ContactFrom  rotate={0}/>
+>>>>>>> 6347013 (update)
     </div>
   )
 }

@@ -5,8 +5,13 @@ import Image from 'next/image'
 
 export default function OurServicesSection() {
   return (
+<<<<<<< HEAD
     <div className='xl:px-40 lg:px-10 px-5 py-15' style={{
       background: 'linear-gradient(180deg, hsla(0,0%,100%,0.9) 103.91%), hsla(0,84%,85%,0.4)'
+=======
+    <section className='xl:px-40 lg:px-10 px-5 py-15' style={{
+      background: 'linear-gradient(180deg, hsla(0,84%,85%,0.4), hsla(0,0%,100%,0.9) 103.91%)'
+>>>>>>> 6347013 (update)
     }}>
       <ServicesSection heading={"Our Services"} />
       <div className='section-2 mt-15'>
@@ -16,8 +21,13 @@ export default function OurServicesSection() {
           title: "Our Proven Work Process",
         }} />
         <div className='work-processs mt-15 relative wow  animate__animated  animate__fadeInUp'>
+<<<<<<< HEAD
           <div className='absolute top-[25%] left-40 lg:block hidden'>
             <Image src='/assets/images/shape/process-line.png' fill sizes='100%' alt=''loading="lazy"/>
+=======
+          <div className='absolute top-[25%] left-0 realtive h-[1px] w-full lg:block hidden'>
+            <Image src='/assets/images/shape/process-line.png' fill sizes='100%' alt='' className='object-contain' loading="lazy"/>
+>>>>>>> 6347013 (update)
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5  relative">
             <div className="text-center flex justify-center items-center flex-col">
@@ -29,7 +39,11 @@ export default function OurServicesSection() {
             </div>
             <div className="text-center flex justify-center items-center flex-col">
               <div className="bg-purple-200 text-black w-25 h-25  rounded-full flex items-center justify-center font-semibold relative">
+<<<<<<< HEAD
                 <Image src="/assets/images/shape/process-circle.png" alt="image" loading="lazy" className='absolute animation-rotate' fill sizes='100%'/>
+=======
+                <Image src="/assets/images/shape/process-circle.png" alt="image" loading="lazy" className='absolute object-contain animation-rotate' fill sizes='100%'/>
+>>>>>>> 6347013 (update)
                 <span className='relative'>2</span>
               </div>
               <h3 className="mt-4 text-2xl font-[500]">Link Building</h3>
@@ -46,6 +60,10 @@ export default function OurServicesSection() {
 
         </div>
       </div>
+<<<<<<< HEAD
     </div>
+=======
+    </section>
+>>>>>>> 6347013 (update)
   )
 }

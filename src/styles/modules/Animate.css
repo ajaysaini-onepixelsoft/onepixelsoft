@@ -58,11 +58,19 @@
 }
 
 .animate__animated_shakeX:hover {
+<<<<<<< HEAD
   animation: shakeX 1s linear;
 } 
 .animate__animated_shakeX:hover:active {
   animation: shakeX 1s linear;
 }
+=======
+  animation: shakeX 1s  infinite;
+} 
+/* .animate__animated_shakeX:hover:active {
+  animation: shakeX 1s linear;
+} */
+>>>>>>> 6347013 (update)
 
 
 @keyframes pulseCustom {

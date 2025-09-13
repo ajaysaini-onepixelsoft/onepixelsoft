@@ -8,7 +8,11 @@ import Image from "next/image";
 
 export default function QuickExplore() {
     return (
+<<<<<<< HEAD
         <div className="px-5 lg:px-10 xl:px-40 py-10 flex relative items-center justify-center gap-10 lg:flex-row flex-col">
+=======
+        <section className="px-5 lg:px-10 xl:px-40 py-10 flex relative items-center justify-center gap-10 lg:flex-row flex-col">
+>>>>>>> 6347013 (update)
             {/* Left Text Section */}
             <div className="left-container-for-text basis-1/3 lg:text-left text-center">
                 <h3 className="text-2xl font-semibold text-black mb-3">
@@ -79,7 +83,11 @@ export default function QuickExplore() {
                     <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[5px]  shadow-sm lg:ml-[160px]">
                         <Link href={"/logo-design"}>Logo Design</Link>
                     </li>
+<<<<<<< HEAD
                     <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[5px]  shadow-sm lg:ml-[120px]">
+=======
+                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[5px]  shadow-sm lg:ml-[10px]">
+>>>>>>> 6347013 (update)
                         <Link href={"/dynamic-web-development"}>
                             Dynamic Website Development
                         </Link>
@@ -96,6 +104,10 @@ export default function QuickExplore() {
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
         </div>
+=======
+        </section>
+>>>>>>> 6347013 (update)
     );
 }

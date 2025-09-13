@@ -3,7 +3,11 @@ import React from 'react'
 
 export default function OurServiceLanding({ data }) {
     return (
+<<<<<<< HEAD
         <div className="bg-[#ffe6e6] py-15 px-6 px-5 xl:px-40 flex flex-col md:flex-row-reverse items-center justify-between gap-10">
+=======
+        <section className="bg-[#ffe6e6] py-15 px-6 px-5 xl:px-40 flex flex-col md:flex-row-reverse items-center justify-between gap-10">
+>>>>>>> 6347013 (update)
             {/* Left side images */}
             <div className=" bg-[#F7D4D4] p-10 rounded-xl basis-[40%] relative h-[300px] w-full">
                 <Image src='/assets/images/industries/members.webp' loading="lazy" className='object-contain' sizes='100%' fill alt=''/>
@@ -22,5 +26,9 @@ export default function OurServiceLanding({ data }) {
                     )
                 })}
             </div>
+<<<<<<< HEAD
         </div>)
+=======
+        </section>)
+>>>>>>> 6347013 (update)
 }

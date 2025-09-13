@@ -32,7 +32,11 @@ export default function BlogesSection() {
   },[])
 
   return (
+<<<<<<< HEAD
     <div className="relative xl:px-40 lg:px-10 px-5 xl:py-20 mt-10">
+=======
+    <section className="relative xl:px-40 lg:px-10 px-5 xl:py-20 mt-10">
+>>>>>>> 6347013 (update)
       <div className="flex flex-col lg:flex-row md:items-center md:justify-between lg:mb-20 md:mb-10 mb-5">
         <h2 className="font-medium text-3xl md:text-4xl text-gray-900 mb-4 md:mb-0 tracking-tight">
           Our Latest Blog
@@ -102,6 +106,10 @@ export default function BlogesSection() {
       {/* Navigation Arrows */}
       <div className="blog__arry-prev absolute top-1/2 xl:left-10 lg:left-2 z-10 cursor-pointer hidden lg:block">◀</div>
       <div className="blog__arry-next absolute top-1/2 xl:right-20 lg:right-2 z-10 cursor-pointer hidden lg:block">▶</div>
+<<<<<<< HEAD
     </div>
+=======
+    </section>
+>>>>>>> 6347013 (update)
   );
 }
