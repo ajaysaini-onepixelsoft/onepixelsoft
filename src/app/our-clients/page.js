@@ -14,16 +14,14 @@ export default function OurClients() {
             heading:"Building Partnerships That Matter",
             des:"We are proud to work with a diverse range of businesses, from startups to global brands. Our clients' trust drives us to deliver impactful solutions and long-term success.",
         }}/>
-        <div className='xl:px-40 px-5 pt-15'>
+        <div className='xl:px-40 px-5 pt-15 pb-10'>
             <CommenHeading cmHeading={{
                 smtext:"Our Clients",
                 title:"Brands That Trust OnePixel Soft",
                 desc:"Every project reflects our commitment to innovation, quality, and client success. Discover the brands that have partnered with us on their digital transformation journey.",
             }}/>
         </div>
-        <div className='xl:px-40 px-5 py-15'>
-            <SuccessCard/>
-        </div>
+        <SuccessCard/>
         
         <GlobalClients/>
         <GrowthClients/>

@@ -13,8 +13,8 @@ export default function OurFeatured({FeaturedData}) {
                     {
                         FeaturedData.cards.map((item,index)=>{
                             return(
-                                <div className="p-6 rounded-lg border border-gray-200  wow animate__animated  animate__fadeInUp" data-wow-delay={`${index*0.09}s`} key={index}>
-                                    <div className={`flex items-center justify-center w-16 h-16 mb-3 ${item.bgClass} relative  rounded-xl`}>
+                                <div className="p-6 rounded-lg border border-gray-200  wow animate__animated  animate__fadeInUp normal-scale shadow-lg featured-data-container transition-all duration-300" data-wow-delay={`${index*0.09}s`} key={index}>
+                                    <div className={` flex items-center justify-center w-16 h-16 mb-3 ${item.bgClass} relative  rounded-xl`}>
                                         <Image loading="lazy" src={item.icon} alt="Planning Icon" className='object-contain' width={50} height={50}/>
                                     </div>
                                     <h3 className="text-2xl mb-3">{item.title}</h3>

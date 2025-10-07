@@ -5,9 +5,8 @@ export default function VideoSection() {
 
     return (
         <section className="">
-            <div className="xl:px-40 wow lg:px-10 px-5 animate__animated  animate__fadeInUp">
-                <div className="relative rounded-lg overflow-hidden shadow-lg md:h-[20rem] h-[12rem] md:w-[40%] w-full">
-
+            <div className="xl:px-40 wow lg:px-10 px-5 pt-15 animate__animated  animate__fadeInUp">
+                <div className="relative rounded-lg overflow-hidden shadow-lg md:h-[30rem] h-[12rem] md:w-full w-full">
                     <Image
                         src="/assets/images/about/about-video-image.jpg"
                         alt="About us video" fill loading="lazy"

@@ -3,26 +3,27 @@ import { getWorkSection } from "@/Api/Api";
 import CommenHeading from "@/Commen-components/CommenHeading";
 import { Loader } from "@/Commen-components/Lodding";
 import Link from "next/link";
-import React, {  useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 import "swiper/css";
+import BlackWhiteBtu from "@/Commen-components/BlackWhiteBtu";
 
 export default function CaseProjects() {
   const [workData, setWorkData] = useState([]);
-  const apiData =async()=>{
+  const apiData = async () => {
     const res = await getWorkSection();
     const data = Array.isArray(res) ? res : res.data || [];
-    if(data){
-        setWorkData(data)
+    if (data) {
+      setWorkData(data)
     }
   }
-  useEffect(()=>{
+  useEffect(() => {
     apiData()
-  },[])
+  }, [])
 
   return (
     <section className="xl:px-40 lg:px-10 px-5 py-16">
@@ -57,49 +58,56 @@ export default function CaseProjects() {
                     slidesPerView={1}
                     breakpoints={{
                       480: { slidesPerView: 1 },
-                      768: { slidesPerView: 2 },
-                      1024: { slidesPerView: 3 },
-                      1280: { slidesPerView: 3 },
+                      768: { slidesPerView: 1 },
+                      1024: { slidesPerView: 1 },
+                      1280: { slidesPerView: 1 },
                     }}
                   >
-                    {(item.projects || []).map((project, pIndex) => (
-                      <SwiperSlide key={pIndex}>
-                        <div className="work-section-card border border-gray-200 rounded-xl hover:scale-[1.02] transition-transform duration-300">
-                          {/* Image */}
-                          <div className="relative w-full h-[220px]">
-                            <Image
-                            
-                              src="/assets/images/project/default-image.png"
-                              alt={project.project_name || "Project"}
-                              fill
-                              sizes="100%"
-                              className="object-cover rounded-t-xl"
-                              loading="lazy"
-                            />
-                          </div>
+                    {Array.from(
+                      { length: Math.ceil((item.projects || []).length / 4) }, (_, pIndex) => {
+                        return (
+                          <SwiperSlide key={pIndex}>
+                            <div className="grid grid-cols-2 gap-5">
+                              {
+                                (item.projects || []).slice(pIndex * 4, pIndex * 4 + 4).map((subItem, subIndex) => {
+                                  return (
+                                    <div className={`work-section-card border border-gray-200 rounded-xl hover:scale-[1.02] transition-transform duration-300 ${(subIndex === 1 || subIndex === 2) ? "h-[400px]" : "h-[450px]"}`} key={subIndex}>
+                                      {/* Image */}
+                                      <div className="relative w-full h-[220px]">
+                                        <Image
 
-                          {/* Content */}
-                          <div className="text py-3 px-4">
-                            <h4 className="text-[1.3rem] py-2 text-black">
-                              {project.project_name}
-                            </h4>
-                            <ul className="flex gap-3 items-center text-black">
-                              <li>UI/UX Design</li>
-                              <li className="h-2 w-2 rounded-full bg-[#F4CA42]" />
-                              <li>Development</li>
-                              <li className="h-2 w-2 rounded-full bg-[#F4CA42]" />
-                              <li>Creative Service</li>
-                            </ul>
-                            <Link
-                              href="/contact"
-                              className="about-button inline-flex items-center gap-2 my-4 text-[0.9rem] text-white px-4 py-2 rounded-full shadow transition bg-black hover:bg-gray-900"
-                            >
-                              view case
-                            </Link>
-                          </div>
-                        </div>
-                      </SwiperSlide>
-                    ))}
+                                          src="/assets/images/project/default-image.png"
+                                          alt={subItem.project_name || "Project"}
+                                          fill
+                                          sizes="100%"
+                                          className="object-cover rounded-t-xl"
+                                          loading="lazy"
+                                        />
+                                      </div>
+
+                                      {/* Content */}
+                                      <div className="text py-3 px-4">
+                                        <h4 className="text-[1.3rem] py-2 text-black">
+                                          {subItem.project_name}
+                                        </h4>
+                                        <ul className="flex gap-3 items-center text-black mb-3">
+                                          <li>UI/UX Design</li>
+                                          <li className="h-2 w-2 rounded-full bg-[#F4CA42]" />
+                                          <li>Development</li>
+                                          <li className="h-2 w-2 rounded-full bg-[#F4CA42]" />
+                                          <li>Creative Service</li>
+                                        </ul>
+                                        <BlackWhiteBtu data={"View Case"} />
+                                      </div>
+                                    </div>
+                                  )
+                                })
+                              }
+                            </div>
+                          </SwiperSlide>
+                        )
+                      }
+                    )}
                   </Swiper>
                 </div>
               </div>

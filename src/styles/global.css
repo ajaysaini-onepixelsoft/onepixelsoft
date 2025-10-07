@@ -85,7 +85,9 @@ body {
 
 .font-warning {
   color: #e2c636 !important; }
-
+.font-yellow {
+   color: #ecb13e !important;
+}
 /*======= Text css ends ===========*/
 
 /*======= Background css color start  ===========*/
@@ -97,6 +99,10 @@ body {
 }
 .bg-tertiary {
   background-color: #235947 !important;
+}
+
+.bg-pink{
+  background-color: #FAEEE2 !important;
 }
 .bg-yellow {
   background-color: #ecb13e !important;
@@ -119,8 +125,127 @@ body {
 
 /*======= Background css color end  ===========*/
 
-/*======= Hover css color start  ===========*/
+/*======= Hover css color and elemets  start  ===========*/
 .bg-primary-hover:hover{
   background-color: #5a0f0f !important;
 }
-/*======= Hover css color end  ===========*/
+
+
+.normal-scale:hover{
+  transform:  scale(1.05) !important;
+}
+.shadow-lg:hover{
+    box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
+}
+.underline-left-black {
+  position: relative; 
+  display: inline-block; 
+}
+
+.underline-left-black::after{
+  content: '' !important;
+  background-color: #000 !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 0% !important;
+  height: 2px !important;
+  border-radius: 100%;
+  transition: all ease  0.3s !important;
+}
+.underline-left-black:hover::after{
+  width: 100% !important;
+}
+.fill-left-side{
+  position: relative; 
+  display: inline-block; 
+  z-index: 1;
+  overflow: hidden !important;
+}
+
+.fill-left-side::after{
+  content: '' !important;
+  background-color: #000 !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+    z-index: -1;
+  width: 0% !important;
+  height: 100% !important;
+  border-radius: 100%;
+  transition: all ease-in-out  0.3s !important;
+}
+
+
+.fill-left-side:hover::after{
+  width: 100% !important;
+  border-radius: 0;
+}
+.fill-left-side:hover{
+  color: white !important;
+}
+
+
+.white-black-button{
+    width:fit-content !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid #000 !important;
+    transition: 0.3s ease all;
+}
+
+.white-black-button.second{
+    color:#808183 !important;
+      border: 1px solid #A2AAB7 !important;
+}
+.white-black-button::after{
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    border-radius: 100%;
+    left: 0;
+    transition: 0.3s ease all;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    background:  #000;
+}
+.white-black-button:hover::after{
+    border-radius: 0%;
+    bottom: 0%;
+}
+.white-black-button:hover{
+    color: white !important;
+}
+
+.white-black-button .arrow{
+    overflow: hidden;
+}
+.white-black-button .arrow .faArrow{
+    transition: ease all 0.5s;
+}
+
+.white-black-button:hover .arrow .faArrow{
+    transform: translateX(-20px);
+}
+
+/* .rotated-x-container{
+  perspective: 1000px;
+
+}
+.rotated-360-x {
+  display: inline-block;
+  transition: transform 0.3s ease;
+} */
+
+.roated-360-x:hover{
+  transform: rotateY(90deg) !important;
+}
+
+/*======= Hover css color and elemets  end  ===========*/
+
+
+

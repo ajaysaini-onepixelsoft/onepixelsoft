@@ -45,7 +45,7 @@ export default function AboutAwards() {
                 {/* Brands */}
                 <div className="flex gap-4 flex-wrap md:mt-0 w-full justify-center">
                     {Array.from({ length: 5 }).map((_, i) => (
-                        <div key={i} className="relative w-24 h-12 md:w-28 md:h-16">
+                        <div key={i} className="relative w-24 h-12 md:w-28 md:h-24">
                             <Image
                                 src={`/assets/images/icon/testimonial-four-brand${i + 1}.png`}
                                 alt={`brand ${i + 1}`}
@@ -94,7 +94,7 @@ export default function AboutAwards() {
 
                                 <a
                                     href="#"
-                                    className="about-button animate__fadeIn hover:animate__shakeX wow animate__animated animate__animated_shakeX mt-8 inline-flex items-center cursor-pointer px-6 py-2 bg-white text-black font-[500] rounded-full shadow hover:bg-gray-100 transition duration-500 z-10"
+                                    className="about-button second animate__fadeIn hover:animate__shakeX wow animate__animated animate__animated_shakeX mt-8 inline-flex items-center cursor-pointer px-6 py-2 bg-white text-black font-[500] rounded-full shadow hover:bg-gray-100 transition duration-500 z-10"
                                 >
                                     Go to Clutch
                                     <span className="arrow ml-2 w-5 whitespace-nowrap">
@@ -178,10 +178,10 @@ export default function AboutAwards() {
                     </div>
 
                     <div className="flex justify-center items-center gap-4 mt-5">
-                        <button className="testimonial-four__arry-prev bg-blue-100 text-blue-600 rounded-full p-3 hover:bg-blue-200 transition active disable cursor-pointer">
+                        <button className="testimonial-four__arry-prev bg-black text-white hover:text-black rounded-full p-3 hover:bg-[#eee] transition active disable cursor-pointer">
                             <FaArrowLeft className="w-5 h-5" />
                         </button>
-                        <button className="testimonial-four__arry-next bg-blue-100 text-blue-600 rounded-full p-3 hover:bg-blue-200 transition active cursor-pointer">
+                        <button className="testimonial-four__arry-next bg-black text-white hover:text-black rounded-full p-3 hover:bg-[#eee] transition active cursor-pointer">
                             <FaArrowRight className="w-5 h-5" />
                         </button>
                     </div>

@@ -7,6 +7,14 @@
 .header .contact-btn:hover .arrow .MdArrowOutward{
     transform: translateY(-90%);
 }
+
+
+
+.Typewriter__cursor {
+  font-size: 2rem;   
+  display:none;        
+  font-weight: 300; 
+}
 /*-------------------------------home module header css end-------------------------------*/
 /*-------------------------------work section  css start-------------------------------*/
 .work-card-button .arrow .FaArrowRight{
@@ -64,3 +72,7 @@
     }
 }
 /*---------home hero section css end---------*/
+
+/* .blog__arry:hover{
+    background-color: #eee;
+} */

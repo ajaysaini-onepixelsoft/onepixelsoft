@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function OurWebsiteDevelopment() {
   return (
-    <section className='xl:px-40 px-5 lg:px-10 py-15 bg-gradient-to-br from-violet-100 to-[#eee]' >
+    <section className='xl:px-40 px-5 lg:px-10 py-15 bg-sub-three' >
       <ServicesSection heading={"Our Website Development Team Also Provides Web Portals, Including"}/>
       <div className="section-2 mt-15">
         <div className='wow  animate__animated  animate__fadeInUp'>

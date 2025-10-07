@@ -1,11 +1,10 @@
-import HrRow from '@/Commen-components/HrRow'
 import { OurVisionInfo } from '@/data/AboutUs'
 import Image from 'next/image'
 import React from 'react'
 
 export default function AboutMission() {
     return (
-        <section className="pt-25 text-black pb-10 bg-white xl:px-40 lg:px-10 px-5">
+        <section className="pt-10 text-black pb-10 bg-white xl:px-40 lg:px-10 px-5 bg-pink">
             <div className="container mx-auto mb-15">
                 <div className="flex flex-col lg:flex-row gap-10 justify-between wow animate__animated animate__fadeInUp">
                     <div className="lg:w-5/12">
@@ -78,7 +77,6 @@ export default function AboutMission() {
                     </div>
                 </div>
             </div>
-            <HrRow />
         </section>
     )
 }

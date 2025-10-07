@@ -23,9 +23,9 @@ export default function Leadership() {
         <div className='absolute top-0 left-0 wow  animate__animated  animate__fadeInLeft'>
           <Image src='/assets/images/shape/banner-four-arrow.png' fill alt='' loading="lazy" sizes='100%'/>
         </div>
-          <div className='absolute top-[40%] left-[45%] h-90 md:block hidden'>
+          {/* <div className='absolute top-[40%] left-[45%] h-90 w-90 md:block hidden'>
           <Image src='/assets/images/shape/download__1_-removebg-preview.png' loading="lazy" className='h-full w-full' fill alt='' sizes='100%'/>
-        </div>
+        </div> */}
 
         <AboutHero data={{
           img:"/assets/images/about/about-three-kit.png",
@@ -35,9 +35,9 @@ export default function Leadership() {
         }}/>
         <VideoSection />
       </div>
-      <MarqueeSection exClass={"blank"}/>
+      {/* <MarqueeSection exClass={"blank"}/> */}
+      <AboutSilder exClass={"pt-15"}/>
       <AboutMission />
-      <AboutSilder/>
       <AboutTeam />
       <AboutAwards/>
     </div>

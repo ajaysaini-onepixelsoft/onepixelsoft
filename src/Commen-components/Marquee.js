@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 export default function MarqueeSection({exClass}) {
   return (
       <div className="banner-moving-text realative overflow-hidden">
-        <div className={`banner-moving-text-container absolute ${exClass?exClass:"bottom-0"} left-0 rotate-1 xl:h-15 h-10 w-[99.9%]  flex items-center bg-[#DCC5C5] text-black uppercase xl:text-3xl text-md`}>
+        <div className={`banner-moving-text-container absolute ${exClass?exClass:"bottom-0"} left-0 rotate-4 xl:h-15 h-10 w-[99.9%]  flex items-center bg-[#DCC5C5] text-black uppercase xl:text-3xl text-md`}>
           <Marquee
             direction="left"
             gradient={false}
@@ -31,7 +31,7 @@ export default function MarqueeSection({exClass}) {
 
           </Marquee>
         </div>
-        <div className={`banner-moving-text-container absolute  ${exClass?exClass:"bottom-0"} left-0 -rotate-1 xl:h-15 h-10 w-[99.9%] text-black uppercase xl:text-3xl text-md flex items-center bg-white`}>
+        <div className={`banner-moving-text-container absolute  ${exClass?exClass:"bottom-0"} left-0 -rotate-3 xl:h-15 h-10 w-[99.9%] text-black uppercase xl:text-3xl text-md flex items-center bg-white`}>
           <Marquee
             direction="right"
             gradient={false}

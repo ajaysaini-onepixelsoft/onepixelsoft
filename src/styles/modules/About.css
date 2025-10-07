@@ -45,4 +45,13 @@
 .about-button:hover .arrow .faArrow{
     transform: translateX(-20px);
 }
+
+.about-button.second:hover::after{
+    bottom: -100%;
+}
+
+.about-button.second:hover{
+    color: black !important;
+}
+
 /* about team css end */

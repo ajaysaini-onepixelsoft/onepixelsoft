@@ -5,11 +5,11 @@ import RedArrowButton from '@/Commen-components/RedArrowButton';
 
 export default function ServiceGetStart({ singleData }) {
   return (
-    <section className="relative xl:px-40 lg:px-20 px-5 py-16 bg-gradient-to-br from-violet-100 via-white to-[#F9FAFB]">
-      <div className="flex flex-col md:flex-row lg:gap-10 gap-5 items-start wow animate__animated animate__fadeInDown">
+    <section className="relative xl:px-40 lg:px-20 px-5 py-16 bg-sub-three">
+      <div className="flex flex-col md:flex-row lg:gap-5 gap-5 items-start wow animate__animated animate__fadeInDown">
         
         {/* Left Content */}
-        <div className="flex flex-col gap-6 basis-full lg:basis-1/2 bg-white rounded-2xl shadow-lg p-6 lg:p-10 hover:shadow-xl transition duration-300">
+        <div className="flex flex-col gap-6 basis-full lg:basis-[50%] bg-white rounded-2xl shadow-lg p-6 lg:p-10 hover:shadow-xl transition duration-300">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
             {singleData?.heading}
           </h1>
@@ -34,7 +34,7 @@ export default function ServiceGetStart({ singleData }) {
         </div>
 
         {/* Right Form */}
-        <div className="basis-full lg:basis-2/5 w-full wow animate__animated animate__fadeInRight">
+        <div className="basis-full lg:basis-[50%]  w-full wow animate__animated animate__fadeInRight">
           <div className="bg-white rounded-2xl shadow-lg lg:p-8 hover:shadow-xl transition duration-300">
             <OurServiceFrom />
           </div>

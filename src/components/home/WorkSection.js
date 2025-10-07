@@ -32,16 +32,16 @@ export default function WorkSection() {
 
   return (
     <section className="relative">
-      <div className="xl:py-15 bg-[#FCF7FF]">
+      <div className="xl:py-12 bg-[#FCF7FF]">
         <div className="work-heading flex items-center flex-col text-center xl:px-40 px-5 py-10 wow  animate__animated  animate__fadeInUp">
           <SmallTitle
             smText="Work and Portfolio"
-            exClass="text-[#751212] text-md text-center"
+            exClass="text-[#751212] text-[1.2rem] text-md text-center"
           />
           <h2 className="xl:text-[3rem] text-[2rem] text-black text-center">
             Our Recent Works
           </h2>
-          <p className="xl:text-[1.2rem] text-sm mt-2 lg:w-[50%] w-full leading-[1.5rem] font-dark font-[500]">
+          <p className="xl:text-[1.2rem] text-sm mt-2 lg:w-[80%] w-full leading-[1.5rem] font-dark font-[500]">
             We deliver creative design, web development, branding, and mobile app
             solutions that drive real business growth. Discover how OnePixel Soft
             helps companies and startups succeed with innovative digital services.
@@ -55,10 +55,10 @@ export default function WorkSection() {
                 workData?.map((data, index) => (
                   <li key={index} className="mb-4 wow  animate__animated  animate__fadeInUp" data-wow-delay={`${index * 0.09}s`}>
                     <HrRow />
-                    <div className="py-4 px-5 flex justify-between items-center">
-                      <div className="left gap-5 flex items-center">
+                    <div className="py-5 px-5 flex justify-between items-center">
+                      <div className="left gap-5 flex items-center text-[1.4rem]">
                         <p>{index + 1}</p>
-                        <h4>{data.category_name}</h4>
+                        <h4 className="">{data.category_name}</h4>
                       </div>
                       <div className="right gap-5 flex items-center">
                         <p>{data.category_description}</p>
@@ -102,16 +102,20 @@ export default function WorkSection() {
                                 <div
                                   className="single-work-item border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-500 list-none  h-full bg-white"
                                 >
-                                  <div className="lg:h-[300px] h-[200px] w-full relative">
-                                    <Image src="/assets/images/project/default-image.png" fill sizes="100%" alt={project.project_name} 
-                                      className=" relative object-cover rounded-t-lg" loading="lazy" />
+                                  <div className="lg:h-[400px] h-[200px] w-full relative">
+                                    <Link href={`/project-details/${idx + 1}`}>
+                                        <Image src="/assets/images/project/default-image.png" fill sizes="100%" alt={project.project_name} 
+                                          className=" relative object-cover rounded-t-lg" loading="lazy" />
+                                    </Link>
                                   </div>
                                   <div className="p-4">
-                                    <h5 className="text-xl py-2 font-semibold mb-2">
-                                      {project.project_name}
+                                    <h5 className="text-xl py-2 font-semibold mb-2 ">
+                                      <Link href={`/project-details/${idx + 1}`} className="hover:underline">
+                                        {project.project_name}
+                                      </Link>
                                     </h5>
                                     <div className="flex flex-wrap gap-2 justify-between items-center">
-                                      <div className="text-gray-600 text-md w-100" dangerouslySetInnerHTML={{
+                                      <div className="text-gray-600 text-md w-100 text-justify" dangerouslySetInnerHTML={{
                                         __html: project.about_project.slice(0, 200),
                                       }}
                                       />

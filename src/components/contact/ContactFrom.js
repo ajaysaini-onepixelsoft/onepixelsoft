@@ -1,12 +1,15 @@
+import BlackWhiteBtu from "@/Commen-components/BlackWhiteBtu";
 import Image from "next/image";
 import React from "react";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaCalendar, FaPhone, FaWhatsapp } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 export default function ContactFrom({ exClass, rotate = 0 }) {
   return (
     <section
-      className={`xl:px-40 px-5 py-20 ${
-        exClass ? exClass : "bg-gradient-to-br from-violet-100 to-[#eee]"
-      } relative wow animate__animated animate__fadeInUp overflow-hidden`}
+      className={`xl:px-40 px-5 py-20 ${exClass ? exClass : "bg-[#FAE6E6]/60 backdrop-blur-md"
+        } relative wow animate__animated animate__fadeInUp overflow-hidden`}
       data-wow-delay="0.5s"
     >
       {/* Background shapes */}
@@ -24,35 +27,41 @@ export default function ContactFrom({ exClass, rotate = 0 }) {
           </h3>
           <p className="mb-6 text-lg text-gray-700 leading-relaxed">
             Your insights matter! Drop us a line and share your thoughts.{" "}
-            <span className="font-semibold text-indigo-600">OnePixel Soft</span>{" "}
+            <span className="font-semibold font-dark">OnePixel Soft</span>{" "}
             values your feedback and looks forward to hearing from you.
           </p>
 
           <div className="space-y-6">
             <div>
-              <h5 className="text-lg font-semibold text-indigo-700">
-                Email Address
+              <h5 className="text-lg font-semibold font-dark flex gap-2 items-center">
+                <MdEmail/> Email Address
               </h5>
-              <p className="text-gray-600">sales@onepixelsoft.com</p>
+              <p className="text-gray-600 text-[1.1rem]">
+                sales@onepixelsoft.com
+              </p>
+              <p className="text-gray-600 text-[1.1rem]">
+                info@onepixelsoft.com
+              </p>
+
             </div>
             <div>
-              <h5 className="text-lg font-semibold text-indigo-700">
-                Phone Number
+              <h5 className="text-lg font-semibold font-dark">
+                Contact Number
               </h5>
-              <p className="text-gray-600">+91-7737451230</p>
+              <p className="text-gray-600 flex gap-3 items-center py-1 text-[1.1rem]"><FaWhatsapp size={20}/> +91-7737451230</p>
+              <p className="text-gray-600 flex gap-3 items-center py-1 text-[1.1rem]"><FaPhone size={20}/>+91-8892020208</p>
             </div>
             <div>
-              <h5 className="text-lg font-semibold text-indigo-700">
-                Headquarters Address
+              <h5 className="text-lg font-semibold font-dark flex gap-2 items-center">
+                <FaMapMarkerAlt/> Headquarters Address
               </h5>
               <p className="text-gray-600">
-                3rd Floor, Roondla Plaza, 84/20, Madhyam Marg, near KV No, Ward
-                27, Mansarovar Sector 8, Jaipur, Rajasthan 302020
+                3rd Floor, Roondla Plaza, 84/20, Madhyam Marg, near KV No 5, Jaipur, Rajasthan 302020
               </p>
             </div>
             <div>
-              <h5 className="text-lg font-semibold text-indigo-700">
-                Business Hours
+              <h5 className="text-lg font-semibold font-dark flex gap-2 items-center">
+                <FaCalendar/> Business Hours
               </h5>
               <p className="text-gray-600">
                 Monday–Saturday <br /> 10:00 AM – 07:00 PM
@@ -99,15 +108,8 @@ export default function ContactFrom({ exClass, rotate = 0 }) {
               placeholder="Your message"
               className="border border-gray-300 rounded-lg px-4 py-3 h-28 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-300 font-medium placeholder-gray-400"
             />
-
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center bg-gradient-to-r from-indigo-600 to-blue-500 text-white px-6 py-3 rounded-lg mt-4 font-semibold shadow-md hover:scale-105 hover:shadow-lg transition duration-300"
-            >
-              Send Message
-              <i className="ri-arrow-right-line text-lg ml-2"></i>
-            </button>
-          </form>
+            <BlackWhiteBtu data={"Send Massaged"} exClass={"second"}/>
+            </form>
         </div>
       </div>
     </section>

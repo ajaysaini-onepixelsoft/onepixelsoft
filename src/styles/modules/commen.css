@@ -53,6 +53,12 @@
 /* --------------------term and contion page css end------------*/
 
 
+/* featured data css start  */
+.featured-data-container{
+  transition: ease 0.5s all;
+}
+/* featured data css end  */
+
 .footer-moving-animation {
   display: flex;
   justify-content: center;

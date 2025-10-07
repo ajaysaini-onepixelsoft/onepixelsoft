@@ -3,7 +3,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
-export default function AboutSilder() {
+export default function AboutSilder({exClass}) {
   const brandLogos = [
     { name: "CARID", url: "/assets/images/brand/CARID.png" },
     { name: "Drive Carma", url: "/assets/images/brand/drive carma.png" },
@@ -20,7 +20,7 @@ export default function AboutSilder() {
   ];
 
   return (
-    <section className="brands-section py-10 xl:px-40 px-5 wow animate__animated animate__fadeIn">
+    <section className={`brands-section py-10 xl:px-40 px-5 wow animate__animated animate__fadeIn ${exClass?exClass:null}`}>
       <Marquee speed={50}  gradient={false} pauseOnHover={true}>
         {brandLogos.map((logo, index) => (
           <div

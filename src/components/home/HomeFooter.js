@@ -1,16 +1,35 @@
 import MarqueeSection from '@/Commen-components/Marquee'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaPhoneAlt, FaYoutube } from 'react-icons/fa'
-import { FaFacebook, FaInstagram, FaLinkedin, FaLocationDot, FaXTwitter } from 'react-icons/fa6'
+import { FaFacebook, FaInstagram, FaLinkedin, FaLocationDot, FaWhatsapp, FaXTwitter } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
 import { navigationData } from '@/data/navigation'
 import Image from 'next/image'
 
 export default function HomeFooter() {
+      const [whatsAppLink, setWhatsAppLink] = useState("");
+    
+      useEffect(() => {
+        const phone = "7737451230";
+        const text =
+          "Hello, I am interested in digital marketing, web development, app development, and graphic design services for my business. Please share more details.";
+    
+        const encodedText = encodeURIComponent(text);
+    
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    
+        if (isMobile) {
+          setWhatsAppLink(`whatsapp://send?phone=${phone}&text=${encodedText}`);
+        } else {
+          setWhatsAppLink(`https://wa.me/${phone}?text=${encodedText}`);
+        }
+      }, []);
+    
+      if (!whatsAppLink) return null;
+    
     return (
         <footer className="bg-[#000] text-gray-200 py-8 relative wow  animate__animated  animate__fadeInUp overflow-hidden">
-            <MarqueeSection exClass={'top-0'} />
 
             <div className='absolute bottom-0 left-0 h-[40vh]  w-full footer-moving-animation'>
                 <div></div>
@@ -20,12 +39,12 @@ export default function HomeFooter() {
                 <div></div>
                 <div></div>
             </div>
-            <div className="px-5 lg:px-10 xl:px-40 pt-30 relative">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-20 md:gap-10 gap-5 relative ">
+            <div className="px-5 lg:px-10 xl:px-40 pt-10 relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr_1.2fr] lg:gap-20 md:gap-10 gap-5 relative ">
                     <div>
-                        <div className='mb-3'>
+                        <div className='mb-5'>
                             <Link href="/">
-                                <Image src="/assets/images/logo/onepixel-logo.png" alt="OnePixelSoft Logo" className=" bg-white px-5 py-3 rounded-md" width={150} height={100} loading="lazy" />
+                                <Image src="/assets/images/logo/onepixel-logo.png" alt="OnePixelSoft Logo" className="p-3 bg-white  rounded-md" width={200} height={60} loading="lazy" />
                             </Link>
                         </div>
 
@@ -37,9 +56,9 @@ export default function HomeFooter() {
                             <FaPhoneAlt />
                             <p className="text-md"> +91-7737451230</p>
                         </div>
-                        <div className='flex gap-4 items-center  my-3 text-gray-300 hover:text-white'>
+                        <div className='flex gap-4 items-start  my-3 text-gray-300 hover:text-white'>
                             <FaLocationDot size={50} />
-                            <p className='text-md'> 3rd Floor, Roondla Plaza, 84/20, Madhyam Marg, near KV No, Ward 27, Mansarovar Sector 8, Mansarovar, Jaipur, Rajasthan 302020</p>
+                            <p className='text-md'> 3rd Floor, Roondla Plaza, 84/20, Madhyam Marg, near KV No 5, Mansarovar, Jaipur, Rajasthan 302020</p>
                         </div>
                     </div>
 
@@ -87,10 +106,16 @@ export default function HomeFooter() {
                                     XTwitter
                                 </Link>
                             </li>
+                            <li>
+                                <Link href={whatsAppLink} target="_blank" className="hover:text-white flex gap-3 items-center">
+                                    <FaWhatsapp size={18} />
+                                    Whatsapp
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
-                    <div>
+                    <div className="">
 
                         <h3 className="text-white font-semibold mb-2 text-[1.1rem]">Contact</h3>
                         <iframe
@@ -98,7 +123,7 @@ export default function HomeFooter() {
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            className="w-full h-[10rem] border-0"
+                            className="w-[400px] h-[250px] border-0"
                         ></iframe>
                     </div>
 

@@ -10,13 +10,13 @@ import Image from "next/image";
 
 export default function OurTestimonial() {
   return (
-    <section className="relative xl:px-40 lg:px-10 px-5 xl:py-20 py-10 bg-gray-50 wow animate__animated animate__fadeInUp">
+    <section className="relative xl:px-40 lg:px-10 px-5 xl:py-20 py-10 bg-sub-three wow animate__animated animate__fadeInUp">
       <div className="flex flex-col xl:flex-row gap-12 xl:gap-20">
         <div className="flex-1">
           <h1 className="text-2xl md:text-3xl font-bold  text-gray-900 mb-2">
             Our Testimonial
           </h1>
-          <h3 className="text-lg md:text-xl font-semibold text-blue-600 mb-6">
+          <h3 className="text-lg md:text-xl font-semibold font-primary mb-6">
             A Symphony of Satisfied Voices!
           </h3>
 
@@ -28,29 +28,29 @@ export default function OurTestimonial() {
               <Image
                 src="/assets/images/icon/certificate2.png"
                 alt="icon"
-                width={80}
-                height={56} loading="lazy"
+                width={100}
+                height={100} loading="lazy"
                 className="object-contain"
               />
               <Image
                 src="/assets/images/icon/certificate1.svg"
                 alt="icon"
-                width={80}
-                height={56} loading="lazy"
+                width={100}
+                height={100} loading="lazy"
                 className="object-contain"
               />
               <Image
                 src="/assets/images/icon/goodfirms.png"
                 alt="icon"
-                width={80} loading="lazy"
-                height={56}
+                width={100} loading="lazy"
+                height={100}
                 className="object-contain"
               />
               <Image
                 src="/assets/images/icon/MyBadge.png"
                 alt="icon"
-                width={80}
-                height={56} loading="lazy"
+                width={100}
+                height={100} loading="lazy"
                 className="object-contain"
               />
             </div>
@@ -77,7 +77,7 @@ export default function OurTestimonial() {
               {OurTestimonialdata.map((v, i) => (
                 <SwiperSlide key={i}>
                   <div className="testimonial__item flex flex-col h-full">
-                    <div className="flex gap-1 mb-2 text-yellow-400">
+                    <div className="flex gap-1 mb-2 font-yellow">
                       {Array.from({ length: v.stars }).map((_, i) => (
                         <FaStar key={i} />
                       ))}
@@ -91,13 +91,13 @@ export default function OurTestimonial() {
                         height={32} loading="lazy"
                         className="object-contain"
                       />
-                      <h3 className="text-base md:text-lg font-semibold text-gray-800 break-words">
+                      <h3 className="text-base md:text-lg font-semibold text-gray-1000 break-words">
                         {v.title}
                       </h3>
                     </div>
 
                     <p className="text-gray-600 text-sm md:text-base mb-4 break-words">
-                      <strong className="text-blue-600 font-semibold">
+                      <strong className="text-black font-semibold">
                         Onepixel Soft
                       </strong>{" "}
                       {v.description}
@@ -136,10 +136,10 @@ export default function OurTestimonial() {
             </Swiper>
 
             <div className="flex items-center gap-4 mt-6 justify-center">
-              <button className="testimonial__arry-prev bg-blue-200 hover:bg-blue-500 hover:text-white transition-colors p-2 rounded-full active disable">
+              <button className="testimonial__arry-prev bg-black hover:bg-[#eee] hover:text-black transition-all duration-300 text-white transition-colors p-2 rounded-full active disable">
                 <FaArrowLeft />
               </button>
-              <button className="testimonial__arry-next bg-blue-500 text-white hover:bg-blue-600 transition-colors p-2 rounded-full active">
+              <button className="testimonial__arry-next bg-black hover:bg-[#eee] hover:text-black transition-all duration-300 text-white  transition-colors p-2 rounded-full active">
                 <FaArrowRight />
               </button>
             </div>

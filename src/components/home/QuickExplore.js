@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
+import BlackWhiteBtu from "@/Commen-components/BlackWhiteBtu";
 
 export default function QuickExplore() {
     return (
@@ -14,18 +15,13 @@ export default function QuickExplore() {
                 <h3 className="text-2xl font-semibold text-black mb-3">
                     Quick Explore Our Services
                 </h3>
-                <p className="font-dark leading-relaxed mb-5">
-                    Discover the range of digital solutions we provide — from creating dynamic
+                <p className="font-dark leading-relaxed mb-5 text-justify">
+                    Discover the range of digital solutions we provide from creating dynamic
                     and user-friendly websites to mobile development, branding, and online
                     marketing. Our services are designed to help businesses grow and stay
                     ahead in today’s digital market.
                 </p>
-                <Link
-                    href="/blog"
-                    className="inline-block px-6 py-2 bg-[#731212] font-light font-medium rounded-xl shadow-md hover:bg-[#5a0f0f] transition-all duration-300" alt=""
-                >
-                    Explore Now
-                </Link>
+                <BlackWhiteBtu data={"Explore Now"}/>
             </div>
 
             {/* Arrow Image */}
@@ -41,7 +37,7 @@ export default function QuickExplore() {
             <div className="center-swiper basis-1/3 justify-center flex relative">
 
                 <div className="w-30 h-30 rounded-full flex justify-center items-center bg-black text-white border border-white border-5 shadow-lg relative">
-                    <div className="bg-[#FCF7FF] rounded-full h-30 w-30 absolute -z-1 animation-scale"></div>
+                    <div className="bg-primary  rounded-full h-30 w-30 absolute -z-1 animation-scale"></div>
                     <Swiper
                         spaceBetween={20}
                         slidesPerView={1}
@@ -73,23 +69,23 @@ export default function QuickExplore() {
             {/* Right Quick Links */}
             <div className="quick-link basis-1/3 relative">
                 <ul className="lg:space-y-4 flex lg:flex-col flex-row flex-wrap gap-2 justify-center lg:justify-start">
-                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[5px]  shadow-sm lg:ml-[80px]">
+                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[10px] fill-left-side   shadow-sm lg:ml-[80px] ">
                         <Link href={"/e-commerce"}>E-Commerce Website Development</Link>
                     </li>
-                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[5px]  shadow-sm lg:ml-[160px]">
+                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[10px] fill-left-side   shadow-sm lg:ml-[160px]">
                         <Link href={"/logo-design"}>Logo Design</Link>
                     </li>
-                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[5px]  shadow-sm lg:ml-[10px]">
+                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[10px] fill-left-side   shadow-sm lg:ml-[10px]">
                         <Link href={"/dynamic-web-development"}>
                             Dynamic Website Development
                         </Link>
                     </li>
-                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[5px]  shadow-sm lg:ml-[80px]">
+                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[10px] fill-left-side   shadow-sm lg:ml-[80px]">
                         <Link href={"/android-app-development"}>
                             Android Web Development
                         </Link>
                     </li>
-                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[5px]  shadow-sm lg:ml-[120px]">
+                    <li className="bg-white rounded-xl px-5 py-2 border border-gray-300 w-fit transition-transform duration-300 hover:translate-x-[10px] fill-left-side   shadow-sm lg:ml-[120px]">
                         <Link href={"/seo-smo-service-provider"}>
                             Digital Marketing Services
                         </Link>

@@ -14,7 +14,7 @@ import Image from 'next/image'
 
 export default function AboutTeam() {
     return (
-        <section className="xl:px-40 lg:px-10 px-5">
+        <section className="xl:px-40 lg:px-10 px-5 bg-sub-three py-10">
             <div className="container mx-auto px-4">
                 <div className="mb-10 text-left wow  animate__animated  animate__fadeInDown">
                     <SmallTitle smText={"Our Team Members"} exClass={"text-[#731212] text-[1.2rem]"} />
@@ -54,23 +54,23 @@ export default function AboutTeam() {
                                         className="w-full h-full object-cover rounded-lg"
                                     />
                                     <div className="absolute team-social-links  left-1/2 -translate-x-1/2 flex space-x-2 bg-white bg-opacity-80 rounded-full px-2 py-3 gap-4">
-                                        <a href="#" className="text-blue-500 hover:text-blue-700">
+                                        <a href="#" className="font-drak hover:font-ex-dark normal-scale">
                                             <FaPaperPlane />
                                         </a>
-                                        <a href="#" className="text-blue-500 hover:text-blue-700">
+                                        <a href="#" className="font-drak hover:font-ex-dark normal-scale">
                                             <FaLinkedinIn />
                                         </a>
-                                        <a href="#" className="text-blue-500 hover:text-blue-700">
+                                        <a href="#" className="font-drak hover:font-ex-dark normal-scale">
                                             <FaDiscord />
                                         </a>
-                                        <a href="#" className="text-blue-500 hover:text-blue-700">
+                                        <a href="#" className="font-drak hover:font-ex-dark normal-scale">
                                             <FaFacebookF />
                                         </a>
                                     </div>
 
                                 </div>
                                 <h5 className="mt-4 text-xl font-semibold">
-                                    <Link href={`/team-details`} className="hover:text-blue-600 transition">{member.name}</Link>
+                                    <Link href={`/team-details`} className="hover:underline transition">{member.name}</Link>
                                 </h5>
                                 <span className="text-gray-500">{member.position}</span>
                             </div>
@@ -89,10 +89,10 @@ export default function AboutTeam() {
 
 
                     <div className="flex justify-center items-center gap-4 mt-5">
-                        <button className="team-four__arrow-prev cursor-pointer bg-blue-100 text-blue-600 rounded-full p-3 hover:bg-blue-200 transition active disable">
+                        <button className="team-four__arrow-prev cursor-pointer bg-black text-white hover:text-black rounded-full p-3 hover:bg-[#eee] transition active disable">
                             <FaArrowLeft className="w-5 h-5" />
                         </button>
-                        <button className="team-four__arrow-next cursor-pointer bg-blue-100 text-blue-600 rounded-full p-3 hover:bg-blue-200 transition active">
+                        <button className="team-four__arrow-next cursor-pointer bg-black text-white hover:text-black rounded-full p-3 hover:bg-[#eee] transition active">
                             <FaArrowRight className="w-5 h-5" />
                         </button>
                     </div>

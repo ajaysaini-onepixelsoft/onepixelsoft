@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect } from 'react'
-import { FaChevronUp  } from 'react-icons/fa6';
+import { FaArrowUp, FaChevronUp  } from 'react-icons/fa6';
 
 export default function BackToTop() {
     useEffect(() => {
@@ -18,8 +18,8 @@ export default function BackToTop() {
         });
     }, [])
     return (
-        <button id="back-top" className="fixed z-99 bottom-10 right-10 bg-[#731212] p-3 text-white rounded-lg">
-            <FaChevronUp size={15}/>
+        <button id="back-top" className="fixed cursor-pointer z-99 bottom-10 right-10 bg-[#731212] p-3 text-white rounded-lg">
+            <FaArrowUp size={15}/>
         </button>
     )
 }

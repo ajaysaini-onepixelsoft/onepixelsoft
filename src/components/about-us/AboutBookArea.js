@@ -4,15 +4,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { BsPersonWorkspace } from 'react-icons/bs';
-import { FaArrowRight } from 'react-icons/fa6'
+import { FaArrowRight, FaRegBuilding } from 'react-icons/fa6'
 import { IoMdHappy } from "react-icons/io";
 import { IoSchoolSharp } from "react-icons/io5";
+import { MdRateReview } from 'react-icons/md';
 
 export default function AboutBookArea() {
     return (
         <section className="relative overflow-hidden mt-2 wow animate__animated animate__fadeInDown">
             <div className="relative flex flex-col items-center justify-center">
-                <div className="bg-gradient-to-bl from-[#731212] via-black to-black rounded-t-xl shadow-lg px-8 py-12 xl:max-w-5xl w-full relative">
+                <div className="bg-gradient-to-tr from-[#731212]  to-black rounded-t-xl shadow-lg px-8 py-12 xl:max-w-5xl w-full relative">
 
                     <div className="absolute top-20 left-20 w-10 h-10">
                         <Image src="/assets/images/shape/book-star.png" alt="shape" fill sizes='100%' loading="lazy" className="object-contain" />
@@ -46,27 +47,33 @@ export default function AboutBookArea() {
                         <ul className="flex flex-wrap items-center justify-center gap-4 md:gap-8 mb-8">
                             <li>
                                 <Link href="/leadership" className='flex items-center text-[#aaa] font-medium gap-2 hover:text-white hover:underline'>
-                                    <BsPersonWorkspace/>
-                                    <span className="font-semibold text-primary-600">60</span>+ Team Members
+                                    <BsPersonWorkspace />
+                                    60+ Team Members
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/client-reviews" className='flex items-center text-[#aaa] font-medium gap-2 hover:text-white hover:underline'>
+                                    <MdRateReview />
+                                    client reviews
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/case-study" className='flex items-center text-[#aaa] font-medium gap-2 hover:text-white hover:underline'>
-                                    <IoMdHappy/>
+                                    <IoMdHappy />
                                     Success Stories
                                 </Link>
 
                             </li>
                             <li>
                                 <Link href="/career" className='flex items-center text-[#aaa] font-medium gap-2 hover:text-white hover:underline'>
-                                   <IoSchoolSharp/>
+                                    <IoSchoolSharp />
                                     career
                                 </Link>
 
                             </li>
                         </ul>
 
-                        <Link href="/contact" className="about-button inline-flex items-center gap-2 hover:bg-primary-700 text-black px-6 py-3 rounded-full shadow transition bg-white animate__animated_shakeX">
+                        <Link href="/contact" className="about-button second inline-flex items-center gap-2 hover:bg-primary-700 text-black px-6 py-3 rounded-full shadow transition bg-white animate__animated_shakeX">
                             Book a Free Consultation
                             <span className="arrow ml-2 inline-block whitespace-nowrap gap-1 w-5 overflow-hidden">
                                 <FaArrowRight className="faArrow text-black inline-block" />

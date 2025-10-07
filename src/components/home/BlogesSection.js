@@ -11,6 +11,7 @@ import { BsArrowRight } from "react-icons/bs";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 function Loader() {
   return (
@@ -37,7 +38,7 @@ export default function BlogesSection() {
         <h2 className="font-medium text-3xl md:text-4xl text-gray-900 mb-4 md:mb-0 tracking-tight">
           Our Latest Blog
         </h2>
-        <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+        <p className="text-gray-600 lg:text-[1.2rem] md:text-lg leading-relaxed">
           Delve into real-world examples where our Technology <br className="hidden md:block" />
           Solutions, Consulting and Strategy
         </p>
@@ -51,8 +52,8 @@ export default function BlogesSection() {
           loop={bloges.length > 3}
           spaceBetween={24}
           navigation={{
-            nextEl: ".blog__arry-next",
-            prevEl: ".blog__arry-prev",
+            nextEl: ".blog__arry.blog__arry-next",
+            prevEl: ".blog__arry.blog__arry-prev",
           }}
           pagination={{ clickable: true }}
           breakpoints={{
@@ -65,16 +66,16 @@ export default function BlogesSection() {
         >
           {bloges.map((post, index) => (
             <SwiperSlide key={index}>
-              <div className="blog__item bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full transition-transform hover:scale-[1.02] duration-300">
+              <div className="blog__item rounded-lg shadow-md overflow-hidden flex flex-col  transition-transform  duration-300 h-[400px] w-full ">
                 {/* Image */}
-                <div className="blog__image relative w-full h-[250px] overflow-hidden">
-                  <Link href="/">
+                <div className="blog__image relative w-full rounded-t-lg h-[250px] overflow-hidden">
+                  <Link href={`/blog-details/${post.blog_name}`}>
                     <Image
                       src="/assets/images/blog/1744806283.jpg"
                       alt={post.blog_name || "Blog"}
                       fill
                       sizes="100%"
-                      className="object-cover transition-transform duration-500 hover:scale-105"
+                      className="object-cover  transition-transform duration-500 hover:scale-105"
                       loading="lazy"
                     />
                   </Link>
@@ -83,8 +84,8 @@ export default function BlogesSection() {
                 {/* Content */}
                 <div className="flex-1 flex flex-col p-5">
                   <h4 className="mt-2 mb-4 text-lg font-semibold text-gray-800">
-                    <Link href="/" className="hover:text-primary transition-colors">
-                      {post.blog_name}
+                    <Link href={`/blog-details/${post.blog_name}`} className="hover:text-primary transition-colors hover:underline ">
+                      {post.blog_name.slice(0,100)}
                     </Link>
                   </h4>
                   <div className="mt-auto text-black">
@@ -100,8 +101,8 @@ export default function BlogesSection() {
       )}
 
       {/* Navigation Arrows */}
-      <div className="blog__arry-prev absolute top-1/2 xl:left-10 lg:left-2 z-10 cursor-pointer hidden lg:block">◀</div>
-      <div className="blog__arry-next absolute top-1/2 xl:right-20 lg:right-2 z-10 cursor-pointer hidden lg:block">▶</div>
+      <div className="blog__arry  blog__arry-prev absolute top-1/2 xl:left-10 lg:left-2 z-10 cursor-pointer hidden lg:block bg-black hover:bg-[#eee] text-white rounded-full p-3 shadow hover:text-black active disable"><FaArrowLeft/></div>
+      <div className="blog__arry  blog__arry-next absolute top-1/2 xl:right-20 lg:right-2 z-10 cursor-pointer hidden lg:block bg-black text-white hover:bg-[#eee] rounded-full p-3 shadow hover:text-black active"><FaArrowRight/></div>
     </section>
   );
 }

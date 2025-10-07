@@ -31,8 +31,8 @@ export default function BrandsSection() {
             <Image
               src={logo.url}
               alt={logo.name}
-              width={120}
-              height={80} loading="lazy"
+              width={150}
+              height={100} loading="lazy"
               className="object-contain"
             />
           </div>
@@ -55,8 +55,8 @@ export default function BrandsSection() {
             <Image
               src={logo.url}
               alt={logo.name}
-              width={120}
-              height={80} loading="lazy"
+              width={150}
+              height={100} loading="lazy"
               className="object-contain"
             />
           </div>
