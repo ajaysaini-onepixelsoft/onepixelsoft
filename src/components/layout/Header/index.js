@@ -45,10 +45,10 @@ export default function Header() {
   return (
 
     <div className='header-area header-main sticky z-50'>
-      <div className='header bg-[#000000] text-white xl:px-40 lg:px-10 px-5 py-3 text-center flex justify-between items-center'>
-        <div className="logo animate__animated_shakeX text-3xl font-bold bg-white p-2 rounded-md relative animate__animated animate__fadeIn hover:animate__shakeX ">
+      <div className='header bg-[#000000] text-white xl:px-40 lg:px-10 px-5 text-center flex justify-between items-center'>
+        <div className="logo animate__animated_shakeX text-3xl font-bold bg-white p-2 my-2 rounded-md relative animate__animated animate__fadeIn hover:animate__shakeX ">
           <Link href="/">
-            <Image src="/assets/images/logo/onepixel-logo.png" alt="OnePixelSoft Logo" className="w-40 bg-white px-5 py-2 rounded-md" width={150} height={100} loading="lazy" />
+            <Image src="/assets/images/logo/onepixel-logo.png" alt="OnePixelSoft Logo" className=" bg-white px-5 py-1 rounded-md" width={200} height={120} loading="lazy" />
           </Link>
         </div>
 
@@ -68,7 +68,7 @@ export default function Header() {
                         return (
                           <li
                             key={index}
-                            className='sticky  py-8 group cursor-pointer z-60 xl:text-[20px] lg:text-[16px] wow  animate__animated  animate__fadeIn'
+                            className='sticky  py-5 group cursor-pointer z-60 xl:text-[20px] lg:text-[16px] wow  animate__animated  animate__fadeIn'
                             // onMouseEnter={() => item.subMenu && setIsOpen(index)}  
                             onClick={() => item.subMenu && setIsOpen(isOpen === index ? null : index)}
                             onMouseEnter={() => setIsOpen(isOpen === index ? null : index)}
@@ -83,7 +83,7 @@ export default function Header() {
                                 <div className=''>{item.title} {item?.subMenu && <span className='inline-block ml-1'><FaAngleDown className='FaAngleDown' /></span>}</div>
                               )
                             }
-                            <div className={`submenu-container px-2 ${istopset ? "top-24" : "top-37"}`}>
+                            <div className={` submenu-container px-2 ${istopset ? "top-22" : "top-35"}`}>
                               {
                                 item?.subMenu && isOpen === index && (
 
