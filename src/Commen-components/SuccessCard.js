@@ -5,13 +5,17 @@ import Image from 'next/image'
 
 export default function SuccessCard() {
     return (
-        <div>
+        <section>
             <HrRow />
             <div className='about-info-success-text grid xl:grid-cols-4 grid-cols-2 xl:gap-10 gap-4 pt-10 text-center pb-10'>
                 {
                     innovativeData.map((data, index) => (
-                        <div key={index} className='single-about-info md:p-5 p-3  border border-gray-200 rounded-lg scale-100 hover:scale-105 hover:shadow-lg transition-all duration-500  wow animate__animated  animate__fadeInUp' data-wow-delay={`${index*0.09}s`}>
-                            <div className='h-10 w-10 mx-auto mb-3  relative'>
+<div
+  key={index}
+  className="single-about-info md:p-5 p-3 border border-gray-200 rounded-lg scale-100 
+             active:scale-105 active:shadow-lg 
+             transition-all duration-300"
+>                            <div className='h-10 w-10 mx-auto mb-3  relative'>
                                 <Image src={data.icon} loading="lazy" alt="icon" className=' object-contain' fill sizes='100%' />
                             </div>
                             <h3 className='md:text-4xl text-xl text-black mb-2' data-aos="fade-up" data-aos-delay={data.delay} data-aos-duration={data.duration}>{data.count}+</h3>
@@ -23,6 +27,6 @@ export default function SuccessCard() {
             </div>
             <HrRow />
 
-        </div>
+        </section>
     )
 }

@@ -1,12 +1,34 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import MarqueeSection from '@/Commen-components/Marquee';
-
+import { FaWhatsapp } from 'react-icons/fa6';
 export default function HeroSection() {
+
+
+const [whatsAppLink, setWhatsAppLink] = useState("");
+
+  useEffect(() => {
+    const phone = "7737451230";
+    const text =
+      "Hello, I am interested in digital marketing, web development, app development, and graphic design services for my business. Please share more details.";
+
+    const encodedText = encodeURIComponent(text);
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+     setWhatsAppLink(`whatsapp://send?phone=${phone}&text=${encodedText}`);
+    } else {
+      setWhatsAppLink(`https://wa.me/${phone}?text=${encodedText}`);
+    }
+  }, []);
+
+  if (!whatsAppLink) return null;
+
   return (
-    <div className="text-white bg-[url('/assets/images/bg/banner-fout-bg.png')] bg-no-repeat bg-cover bg-center relative">
+    <section className="text-white bg-[url('/assets/images/bg/banner-fout-bg.png')] bg-no-repeat bg-cover bg-center relative">
 
       {/* Left Arrow Image */}
       <div className="banner-four__line absolute top-0 left-0 wow animate__animated animate__fadeInLeft">
@@ -14,7 +36,7 @@ export default function HeroSection() {
           <Image
             src="/assets/images/shape/banner-four-arrow.png"
             alt="Arrow"
-            fill 
+            fill
             className="object-contain"
           />
         </div>
@@ -48,16 +70,23 @@ export default function HeroSection() {
             Our team of expert developers and designers work collaboratively to deliver custom applications tailored
             to your unique needs.
           </p>
-          <button className="bg-primary bg-primary-hover font-light px-5 py-3 rounded-full  transition-all duration-500">
-            Get Started
-          </button>
+    <Link
+      href={whatsAppLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 w-fit relative z-1"
+    >
+      <FaWhatsapp size={30} />
+      Chat on WhatsApp
+    </Link>
+
         </div>
       </div>
 
       {/* Button & Banner Images */}
       <div className="banner-four__image w-full p-3 xl:px-40 px-5 relative">
-        <Link href="/about-us" className="text-btn">
-          <div className="banner-four__line absolute xl:-top-[12%] lg:-top-[7%] xl:right-20 lg:right-0 top-[69%] lg:block hidden wow animate__animated animate__fadeInRight">
+        <div className="text-btn">
+          <div className="banner-four__line absolute xl:-top-[14%] lg:top-[10%] xl:right-20 lg:right-0 top-[69%] lg:block hidden wow animate__animated animate__fadeInRight">
             <div className="relative z-2 w-[60px] h-[60px] xl:w-[120px] xl:h-[120px]">
               <Image
                 src="/assets/images/shape/sysmbol.png"
@@ -67,22 +96,28 @@ export default function HeroSection() {
               />
             </div>
           </div>
-
-          <Image
-            src="/assets/images/banner/banner-four-text-btn.png"
-            alt="Text Button"
-            width={200}
-            height={200}
-            className="btn-circle lg:block hidden"
-          />
-          <Image
-            src="/assets/images/banner/arrow.png"
-            alt="Arrow"
-            width={66}
-            height={66}
-            className="btn-arry lg:block hidden"
-          />
-        </Link>
+          <div className='absolute xl:-top-15 xl:right-[23%] lg:right-[10%] '>
+            <div className='relative  w-[250px] h-[250px]'>
+                <Image
+                  src="/assets/images/banner/banner-four-text-btn.png"
+                  alt="Text Button"
+                  fill sizes='100%'
+                  className="btn-circle lg:block hidden object-contain"
+                />
+            </div>
+          </div>
+            <div className='absolute xl:right-[29%] right-[18%] top-[16%] xl:top-6'>
+          <div className='relative z-11'>
+              <Image
+                src="/assets/images/banner/arrow.png"
+                alt="Arrow"
+                width={66}
+                height={66}
+                className=" lg:block hidden"
+              />
+            </div>
+          </div>
+        </div>
 
         <div className="relative w-full h-[180px] lg:h-[500px]">
           <Image
@@ -95,6 +130,6 @@ export default function HeroSection() {
       </div>
 
       <MarqueeSection />
-    </div>
+    </section>
   );
 }

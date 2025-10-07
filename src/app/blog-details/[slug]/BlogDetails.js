@@ -15,7 +15,7 @@ export default function BlogDetails({ Slugdata }) {
         }}
       />
 
-      <div className="px-5 lg:px-10 xl:px-40  py-12">
+      <section className="px-5 lg:px-10 xl:px-40  py-12">
         {/* Main grid: article + sidebar */}
         <main className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Article */}
@@ -92,7 +92,7 @@ export default function BlogDetails({ Slugdata }) {
             </ul>
           </aside>
         </main>
-      </div>
+      </section>
     </>
   );
 }

@@ -4,12 +4,12 @@ import React from 'react'
 
 export default function OurDevlomentCycle({DevlomentCycleData}) {
     return (
-        <div className='xl:px-40 px-5 mt-10'>
+        <section className='xl:px-40 px-5 mt-10'>
             <div className='heading wow  animate__animated  animate__fadeInUp'>
                 <h1 className='text-[2.2rem] mb-3'>{DevlomentCycleData.heading}</h1>
                 <p className='text-[1.1rem] mb-3'>{DevlomentCycleData.desc}</p>
             </div>
-            <section className="py-10">
+            <div className="py-10">
                 <div className="container mx-auto  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {DevlomentCycleData.cards.map((service, index) => (
                         <div key={index}
@@ -32,8 +32,8 @@ export default function OurDevlomentCycle({DevlomentCycleData}) {
                         </div>
                     ))}
                 </div>
-            </section>
+            </div>
             <RedArrowButton data={"Share Your Requirements with Us"}/>
-        </div>
+        </section>
     )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function OurAppSuccess({appSuccessData}) {
     return (
-        <div className='xl:px-40 px-5 pt-10'>
+        <section className='xl:px-40 px-5 pt-10'>
             <div className='wow  animate__animated  animate__fadeInUp'>
                 <h1 className='text-[2.2rem] mb-3'>{appSuccessData.heading}</h1>
                 <p className='text-[1.1rem]'>{appSuccessData?.desc}</p>
@@ -32,6 +32,6 @@ export default function OurAppSuccess({appSuccessData}) {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     )
 }

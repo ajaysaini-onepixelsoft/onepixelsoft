@@ -20,8 +20,7 @@ export default function AboutSilder() {
   ];
 
   return (
-    <div className="brands-section py-10 xl:px-40 px-5 wow animate__animated animate__fadeIn">
-      {/* LTR Row */}
+    <section className="brands-section py-10 xl:px-40 px-5 wow animate__animated animate__fadeIn">
       <Marquee speed={50}  gradient={false} pauseOnHover={true}>
         {brandLogos.map((logo, index) => (
           <div
@@ -31,13 +30,13 @@ export default function AboutSilder() {
             <Image
               src={logo.url}
               alt={logo.name}
-              width={120}
-              height={80} loading="lazy"
+              width={150}
+              height={100} loading="lazy"
               className="object-contain"
             />
           </div>
         ))}
       </Marquee>
-    </div>
+    </section>
   );
 }

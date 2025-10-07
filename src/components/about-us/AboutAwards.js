@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 export default function AboutAwards() {
     return (
-        <div className="xl:px-40 lg:px-10 px-5 pt-10 relative bg-white">
+        <section className="xl:px-40 lg:px-10 px-5 pt-10 relative bg-white">
 
             {/* Header */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0 wow animate__animated animate__fadeInDown">
@@ -187,6 +187,6 @@ export default function AboutAwards() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

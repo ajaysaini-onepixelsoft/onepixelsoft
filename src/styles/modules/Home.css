@@ -32,12 +32,7 @@
     left: 65%;
     animation: rotate 20s linear infinite;
 }
-.banner-four__image .text-btn .btn-arry{
-    position: absolute;
-    z-index: 11;
-    top: 4%;
-    left: 69%;
-}
+
 
 @keyframes rotate {
     from {

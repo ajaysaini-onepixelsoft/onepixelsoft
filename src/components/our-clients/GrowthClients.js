@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function GrowthClients() {
   return (
-    <div className='xl:px-40 px-5 py-12 text-black'>
+    <section className='xl:px-40 px-5 py-12 text-black'>
         <div className='growth-client-heading wow  animate__animated  animate__fadeInUp'>
             <h1 className='text-[2.4rem] mb-2'>Proud Partners in Growth</h1>
             <p className='text-[1.09rem] xl:w-[75%] w-full'>We are honored to be a trusted partner for businesses worldwide. Their satisfaction and success fuel our passion for delivering outstanding digital solutions.</p>
@@ -23,6 +23,6 @@ export default function GrowthClients() {
             }
         </div>
         <HrRow/>
-    </div>
+    </section>
   )
 }

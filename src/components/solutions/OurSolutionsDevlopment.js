@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function OurSolutionsDevlopment({devlopmentData}) {
   return (
-    <div className='xl:px-40 px-5 mt-10'>
+    <section className='xl:px-40 px-5 mt-10'>
         <div className='heading wow  animate__animated  animate__fadeInUp'>
             {
               devlopmentData?.span && (
@@ -42,6 +42,6 @@ export default function OurSolutionsDevlopment({devlopmentData}) {
 
       </div>
     </section>
-    </div>
+    </section>
   )
 }

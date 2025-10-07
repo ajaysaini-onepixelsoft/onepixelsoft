@@ -31,7 +31,7 @@ export default function WorkSection() {
     },[])
 
   return (
-    <div className="relative">
+    <section className="relative">
       <div className="xl:py-15 bg-[#FCF7FF]">
         <div className="work-heading flex items-center flex-col text-center xl:px-40 px-5 py-10 wow  animate__animated  animate__fadeInUp">
           <SmallTitle
@@ -102,23 +102,9 @@ export default function WorkSection() {
                                 <div
                                   className="single-work-item border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-500 list-none  h-full bg-white"
                                 >
-                                  <div className="h-[300px] w-full relative">
+                                  <div className="lg:h-[300px] h-[200px] w-full relative">
                                     <Image src="/assets/images/project/default-image.png" fill sizes="100%" alt={project.project_name} 
                                       className=" relative object-cover rounded-t-lg" loading="lazy" />
-                                    {/* <Image
-                                      fill
-                                      src={
-                                        project?.project_banner_img
-                                          ? `/assets/images/project/${project.project_banner_img}`
-                                          : `/assets/images/project/default-image.png`
-                                      }
-                                      onError={(e) => {
-                                        e.target.onerror = null;
-                                        e.target.src = `/assets/images/project/default-image.png`;
-                                      }}
-                                      alt={project.project_name} 
-                                      className=" relative object-cover rounded-t-lg"
-                                    /> */}
                                   </div>
                                   <div className="p-4">
                                     <h5 className="text-xl py-2 font-semibold mb-2">
@@ -129,9 +115,7 @@ export default function WorkSection() {
                                         __html: project.about_project.slice(0, 200),
                                       }}
                                       />
-                                      <Link href={`/project-details/${idx + 1}`}>
-                                        <RedArrowButton data={"view full project"} />
-                                      </Link>
+                                        <RedArrowButton pathName={`/project-details/${idx + 1}`} data={"view full project"} />
                                     </div>
                                   </div>
                                 </div>
@@ -147,6 +131,6 @@ export default function WorkSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

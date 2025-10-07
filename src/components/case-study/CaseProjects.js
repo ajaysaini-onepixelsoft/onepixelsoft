@@ -25,7 +25,7 @@ export default function CaseProjects() {
   },[])
 
   return (
-    <div className="xl:px-40 lg:px-10 px-5 py-16">
+    <section className="xl:px-40 lg:px-10 px-5 py-16">
       <CommenHeading
         cmHeading={{
           title: "Real Projects, Real Results",
@@ -95,10 +95,6 @@ export default function CaseProjects() {
                               className="about-button inline-flex items-center gap-2 my-4 text-[0.9rem] text-white px-4 py-2 rounded-full shadow transition bg-black hover:bg-gray-900"
                             >
                               view case
-                              <span className="arrow ml-2 inline-flex gap-1">
-                                <FaArrowRight className="text-white" />
-                                <FaArrowRight className="text-white" />
-                              </span>
                             </Link>
                           </div>
                         </div>
@@ -110,6 +106,6 @@ export default function CaseProjects() {
             )
         )
       )}
-    </div>
+    </section>
   );
 }

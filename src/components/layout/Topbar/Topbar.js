@@ -17,7 +17,7 @@ export default function Topbar() {
   if (isMobile) return null;
 
   return (
-    <div className='topbar bg-[#222222] lg:px-10 text-white font-semibold xl:text-[1.2rem] md:text-[13px] xl:px-40 md:px-5 py-3 flex justify-between items-center'>
+    <section className='topbar bg-[#222222] lg:px-10 text-white font-semibold xl:text-[1.2rem] md:text-[13px] xl:px-40 md:px-5 py-3 flex justify-between items-center'>
       <h4 className='text-[#ccc]'>
         <strong className='text-[#fff]'>Working Hours:</strong> Monday - Friday, 10am - 07pm
       </h4>
@@ -72,6 +72,6 @@ export default function Topbar() {
           </Link>
         </li>
       </ul>
-    </div>
+    </section>
   );
 }

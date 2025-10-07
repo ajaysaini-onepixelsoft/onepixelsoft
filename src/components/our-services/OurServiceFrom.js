@@ -3,7 +3,7 @@ import React from 'react'
 export default function OurServiceFrom() {
     return (
         <div className="w-full">
-            <form action="#" className="flex flex-col gap-5 bg-gradient-to-br from-[#F9FAFB] to-[#E7EFFF] p-8 rounded-2xl shadow-lg">
+            <form action="#" className="flex flex-col gap-5 bg-gradient-to-br from-violet-50 to-[#E7EFFF] p-8 rounded-2xl shadow-lg">
                 
                 <div className="text-center mb-2">
                     <h2 className="text-2xl font-semibold text-gray-900">Request a Callback</h2>

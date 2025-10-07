@@ -2,7 +2,7 @@ import MarqueeSection from '@/Commen-components/Marquee'
 import AboutBookArea from '@/components/about-us/AboutBookArea'
 import Link from 'next/link'
 import React from 'react'
-import {  FaPhoneAlt, FaYoutube } from 'react-icons/fa'
+import { FaPhoneAlt, FaYoutube } from 'react-icons/fa'
 import { FaFacebook, FaInstagram, FaLinkedin, FaLocationDot, FaXTwitter } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
 import { navigationData } from '@/data/navigation'
@@ -12,15 +12,25 @@ export default function Footer() {
     return (
         <footer className=" text-gray-300 pt-8 relative wow animate__animated  animate__fadeInUp overflow-hidden">
             <div className='bg-white  '>
-                <AboutBookArea/>
+                <AboutBookArea />
             </div>
+
             <div className="px-5 lg:px-10 xl:px-40 pt-10 bg-black relative">
-                                <div className='absolute bottom-30 h-[500px] w-[500px] bg-gradient-to-r from-[#731212] to-orange-500  left-0 animated-random-shape'></div>
+            <div className='absolute bottom-0 left-0 h-[40vh]  w-full footer-moving-animation'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-20 md:gap-10 gap-5 relative">
                     <div>
                         <div className='mb-3'>
-                            <Image src="/assets/images/logo/onepixel-logo.png" alt="OnePixelSoft Logo" className="w-40 bg-white px-5 py-3 rounded-md" width={150} height={100} loading="lazy" />
+                            <Link href="/">
+                                <Image src="/assets/images/logo/onepixel-logo.png" alt="OnePixelSoft Logo" className="w-40 bg-white px-5 py-3 rounded-md" width={150} height={100} loading="lazy" />
+                            </Link>
                         </div>
 
                         <div className='flex gap-4 items-center my-3 text-gray-300 hover:text-white'>
@@ -32,7 +42,7 @@ export default function Footer() {
                             <p className="text-md"> +91-7737451230</p>
                         </div>
                         <div className='flex gap-4 items-center  my-3 text-gray-300 hover:text-white'>
-                            <FaLocationDot size={50}/>
+                            <FaLocationDot size={50} />
                             <p className='text-md'> 3rd Floor, Roondla Plaza, 84/20, Madhyam Marg, near KV No, Ward 27, Mansarovar Sector 8, Mansarovar, Jaipur, Rajasthan 302020</p>
                         </div>
                     </div>
@@ -52,7 +62,7 @@ export default function Footer() {
                         <h3 className="text-white font-semibold mb-4 text-[1.1rem]">Social media</h3>
                         <ul className="space-y-2 text-md">
                             <li>
-                                <Link href="https://www.facebook.com/onepixelsoft1/"  target="_blank" className="hover:text-white flex gap-3 items-center">
+                                <Link href="https://www.facebook.com/onepixelsoft1/" target="_blank" className="hover:text-white flex gap-3 items-center">
                                     <FaFacebook size={18} />
                                     Facebook
                                 </Link>
@@ -64,7 +74,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://www.youtube.com/@skillupgradeofficial" target="_blank"  className="hover:text-white flex gap-3 items-center">
+                                <Link href="https://www.youtube.com/@skillupgradeofficial" target="_blank" className="hover:text-white flex gap-3 items-center">
                                     <FaYoutube size={18} />
                                     Youtube
                                 </Link>
@@ -109,9 +119,9 @@ export default function Footer() {
                                         return (
                                             <div key={index}>
                                                 <span className='text-md text-gray-400 duration-300 trastion-all hover:text-white'>
-                                                <Link href={nestItem.path}>
-                                                  {nestItem.title}
-                                                </Link></span>
+                                                    <Link href={nestItem.path}>
+                                                        {nestItem.title}
+                                                    </Link></span>
                                                 <span> | </span>
                                             </div>
                                         )
@@ -128,17 +138,17 @@ export default function Footer() {
                         {
                             navigationData.map((v) => (
                                 v?.subMenu?.slice(5).map((item, index) => {
-                                    return(
-                                    <div key={index}>
-                                        <span className='text-md text-gray-400 duration-300 trastion-all hover:text-white'>
-                                            {
-                                                item?.href && (
-                                                    <Link href={item?.href}>{item.title}</Link>
-                                                )
-                                            }
-                                        </span>
-                                        <span> | </span>
-                                    </div>
+                                    return (
+                                        <div key={index}>
+                                            <span className='text-md text-gray-400 duration-300 trastion-all hover:text-white'>
+                                                {
+                                                    item?.href && (
+                                                        <Link href={item?.href}>{item.title}</Link>
+                                                    )
+                                                }
+                                            </span>
+                                            <span> | </span>
+                                        </div>
                                     )
                                 }
                                 )
